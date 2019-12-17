@@ -1,0 +1,73 @@
+*** Settings ***
+Variables         ../../../../config/elements/收费管理/抄表Xpath.py
+Library           Selenium2Library
+Resource          ../../../通用方法.robot
+
+*** Keywords ***
+抄表进度概况
+    Click Element    ${进度概况选择表下拉}
+    sleep    1
+    Click Element    ${进度概况选择表类型}
+    sleep    1
+    Click Element    ${进度概况管理区下拉}
+    sleep    1
+    Click Element    ${进度概况选择管理区}
+    sleep    1
+    Click Element    ${楼宇选择下拉}
+    sleep    1
+    Click Element    ${选择楼宇}
+    sleep    3
+    Click Element    ${清除楼宇按钮}
+    sleep    1
+    Click Element    ${清除楼宇按钮}
+    sleep    1
+    Click Element    ${楼宇选择下拉}
+
+抄表进度明细(抄表)
+    数据库查询操作    ${GetMeterHouseCode}
+    ${cbcode}    Set Variable    ${var[0][0]}
+    Set Suite Variable    ${cbcode}
+    Click Element    ${抄表进度明细 }
+    sleep    3
+    Click Element    ${查看全部抄表数据}
+    sleep    3
+    Click Element    ${查看已抄表数据}
+    sleep    3
+    Click Element    ${查看未抄表数据}
+    sleep    3
+    Click Button    ${批量录入}
+    sleep    3
+    Click Element    ${仪表种类输入框删除}
+    sleep    1
+    Click Element    ${仪表种类输入框删除}
+    sleep    2
+    input text    ${抄表房间搜索输入}    ${cbcode}
+    sleep    2
+    Click Button    ${抄表搜索按钮}
+    sleep    1
+    Alert Should Be Present
+    sleep    1
+    等待element元素可见    ${本期读数输入框}
+    sleep    2
+    input text    ${本期读数输入框}    100.55
+    sleep    2
+    Click Element    ${本次抄表日期选择器}
+    sleep    2
+    Click Element    ${选择本次抄表日期}
+    sleep    2
+    Click Button    ${抄表保存按钮}
+    sleep    2
+    Click Element    ${录入成功确定}
+    sleep    2
+    Click Element    ${录入返回按钮}
+
+抄表历史记录
+    Click Element    ${抄表历史记录}
+    sleep    3
+    等待element元素可见    ${选择状态为已录入的数据}
+    sleep    3
+    Click Element    ${选择状态为已录入的数据}
+    sleep    3
+    Click Button    ${删除抄表数据}
+    sleep    3
+    Click Element    ${删除抄表二次确认}
