@@ -60,7 +60,10 @@ GetBillNCodeAndDayST3="select  top 1 o.code,b.ShouldChargeDate from Organization
 GetBillNCodeAndDayST4="select  top 1  o.code,b.ShouldChargeDate from OrganizationItem o,PaymentTicketOrganizationItem p,bill b,PaymentTicket t,Payment pt where b.PaidAmount <> 0 and b.status =1 and b.IsDelete=0 and b.OrganizationItemId is not null and o.id=b.OrganizationItemId and p.OrganizationItemId=o.Id and p.PaymentTicketId=t.Id and t.Status=1 and pt.Status=2  and pt.CustomerId=b.CustomerId and pt.PaidMoney=b.PaidAmount"
 ##获取未退款票据号
 GetNoRefunTID="select top 1 pt.TicketNumber from PaymentTicket pt,RefundTicket rt where pt.id<>rt.PaymentTicketId"
-
+'''
+获取有固定金额的管理区及管理区、客户名称、固定金额标准名称
+'''
+Cal4ChargegeName='SELECT TOP 1 o.name,c.name,cu.Name from OrganizationItem o,ChargeItem c,Customer cu where c.CalculationMethod=4 and o.id=c.OrganizationItemId and cu.RegionId=c.OrganizationItemId'
 '''
 获取已出账单房间、账单应收日期
 '''

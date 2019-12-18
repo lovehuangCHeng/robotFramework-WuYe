@@ -39,8 +39,9 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     sleep    0.5
     input text    ${欠费月度统计_费用应收日期结束}    2019-11-30
     sleep    2
+    等待元素可用    ${欠费月度统计_搜索按钮}
+    sleep    0.5
     click button    ${欠费月度统计_搜索按钮}
-
 
 欠费月度统计_欠费金额跳转明细
     数据库查询操作    ${guanliquID}

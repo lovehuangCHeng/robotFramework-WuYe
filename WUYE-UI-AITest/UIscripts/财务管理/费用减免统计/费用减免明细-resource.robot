@@ -1,5 +1,5 @@
 *** Settings ***
-Library           Selenium2Library    timeout=25
+Library           Selenium2Library    timeout=35
 Resource          ../../通用方法.robot
 Variables         ../../../config/elements/财务管理/费用减免统计Xpath.py
 

@@ -135,13 +135,13 @@ Library           DatabaseLibrary
     等待element元素可见    ${编辑绑定收费标准}
     click element    ${编辑绑定收费标准}
     sleep    2
-    等待element元素可见    ${勾选修改开始时间}
+    等待element元素可见    ${单击编辑保存}
     click element    ${勾选修改开始时间}
     等待element元素可见    ${单击编辑开始时间输入框}
-    sleep    1
+    sleep    3
     click element    ${单击编辑开始时间输入框}
     等待element元素可见    ${选择编辑开始日期}
-    sleep    1
+    sleep    3
     click element    ${选择编辑开始日期}
     sleep    1
     click button    ${单击编辑保存}

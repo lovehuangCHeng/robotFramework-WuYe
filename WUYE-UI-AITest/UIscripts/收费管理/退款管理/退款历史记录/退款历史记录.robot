@@ -8,7 +8,6 @@ Library           BuiltIn
 *** Test Cases ***
 导出excel
     登录    ${退款历史记录}
-    进入iframe
     高级搜索
     [Teardown]    关闭浏览器
 

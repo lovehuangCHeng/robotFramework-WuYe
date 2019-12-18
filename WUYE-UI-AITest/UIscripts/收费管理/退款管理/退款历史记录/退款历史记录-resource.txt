@@ -6,15 +6,15 @@ Library           string
 
 *** Keywords ***
 高级搜索
+    sleep    2
+    进入iframe
     Click button    ${高级搜索下拉}
     sleep    2
     Click Element    ${退款日期}
     sleep    3
-    退出iframe
     click element    ${选择本月}
     sleep    2
-    进入iframe
-    S    2
+    sleep    2
     click button    ${确认搜索}
     sleep    3
     click button    ${导出excel}

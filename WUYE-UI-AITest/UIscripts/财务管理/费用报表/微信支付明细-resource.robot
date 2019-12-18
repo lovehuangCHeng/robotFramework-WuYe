@@ -18,15 +18,17 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     #选中管理区
     click element    //li[@id='${var[0][0]}']/a
     sleep    0.5
+    等待element元素可见    ${微信支付明细_收费日期开始}
+    sleep    0.5
+    input text    ${微信支付明细_收费日期开始}    2019-12-01
+    sleep    0.5
+    input text    ${微信支付明细_收费日期结束}    2019-12-31
+    sleep    0.5
     等待元素可用    ${微信支付明细_收费项目}
     sleep    0.5
     click element    ${微信支付明细_收费项目}
     sleep    0.5
     click element    ${微信支付明细_选择收费项目}
-    sleep    0.5
-    click element    ${微信支付明细_收费日期开始}
-    sleep    0.5
-    click element    ${微信支付明细_收费日期结束}
     sleep    3
 
 微信支付明细_导出

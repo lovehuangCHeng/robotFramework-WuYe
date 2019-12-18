@@ -72,6 +72,8 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click element    ${已收费用日报_按收费项目汇总tab}
     sleep    0.5
+    等待元素可用    ${已收费用日报_按收费项目汇总_显示收费标准}
+    sleep    0.5
     click element    ${已收费用日报_按收费项目汇总_显示收费标准}
     sleep    0.5
     click element    ${已收费用日报_收款日期}

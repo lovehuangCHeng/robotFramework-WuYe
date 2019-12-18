@@ -74,7 +74,6 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     sleep    0.5
     click element    ${已收费用月统计_票据汇总Tab}
     sleep    0.5
-    click button    ${已收费用月统计_搜索按钮}
     等待元素可用    ${已收费用月统计_票据汇总导出按钮}
     sleep    0.5
     click button    ${已收费用月统计_票据汇总导出按钮}

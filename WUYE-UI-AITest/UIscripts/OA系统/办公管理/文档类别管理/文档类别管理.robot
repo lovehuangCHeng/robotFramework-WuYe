@@ -9,15 +9,15 @@ Variables         ../../../../config/geturl.py
     : FOR    ${WDLB}    IN RANGE    2
     \    新建文档类别
     sleep    1
-    关闭浏览器
+    [Teardown]    关闭浏览器
 
 编辑文档按钮
     登录    ${文档类别管理}
     编辑文档类别
     sleep    1
-    关闭浏览器
+    [Teardown]    关闭浏览器
 
 删除文档类别
     登录    ${文档类别管理}
     删除文档类别
-    关闭浏览器
+    [Teardown]    关闭浏览器

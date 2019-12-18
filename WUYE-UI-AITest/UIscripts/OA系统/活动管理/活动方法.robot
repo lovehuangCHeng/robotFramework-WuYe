@@ -89,7 +89,6 @@ Resource          ../../通用方法.robot
 
 活动删除
     [Arguments]    ${name}
-    Arguments]    ${name}
     活动搜索    ${name}
     Click Element    ${删除活动}
     sleep    2

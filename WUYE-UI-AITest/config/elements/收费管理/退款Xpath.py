@@ -31,7 +31,7 @@ class MyObject:
 ##退款历史记录
 高级搜索下拉="//div[@class='input-group-btn']/button[@class='btn filter-collapse-toggle']"
 退款日期="//input[@id='RefundDate']"
-选择本月="//font[text()='本月']"
+选择本月="//div[@class='ranges']/ul/li[1]"
 确认搜索="//button[@id='btnFilterDetail']"
 导出excel="//button[@id='btnExport']"
 重置搜索="//button[@id='btnReset']"

@@ -136,7 +136,7 @@ class MyObject:
 住户缴费日期报表_导出="//div[@class='ListButton___2jlS-']//button"
 ##########微信支付明细##########
 微信支付明细_资源树搜索框="//input[@id='txtSerachTerm']"
-微信支付明细_收费项目="//input[@class='select2-search__field']"
+微信支付明细_收费项目="//select[@id='ChargeItemTypeIds']/following-sibling::span"
 微信支付明细_选择收费项目="//ul[@id='select2-ChargeItemTypeIds-results']/li[1]"
 微信支付明细_收费日期开始="//input[@id='PaymentStartDate']"
 微信支付明细_收费日期结束="//input[@id='PaymentEndDate']"

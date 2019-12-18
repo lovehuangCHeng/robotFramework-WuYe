@@ -52,7 +52,7 @@ class MyObject:
 周期管理="//div[@role='tab'and text()='周期管理']"
 排班分组="//div[@role='tab'and text()='排班分组']"
 日历名称="id=name"
-编辑日历="//div[@class='ant-col ant-col-8'][1]//ul[@class='ant-card-actions']/li[1]"
+编辑日历="//div[@class='ant-col ant-col-8'][1]//ul[@class='ant-card-actions']/li[1]/span"
 周期名称="id=name"
 第一天="//div[@id='flight1']"
 第二天="//div[@id='flight2']"
@@ -86,3 +86,8 @@ class MyObject:
 小时="id=hours"
 职员查看页面删除="//tbody/tr[1]/td[10]/span/a"
 职员查看页面编辑="//tbody/tr[1]/td[10]/span/span/a"
+考勤管理高级搜索="//a[@class='seniorSearchBtn']"
+职员名称="id=staffName"
+高级搜索按钮="//div[@class='ant-card-body']//button[2]"
+
+

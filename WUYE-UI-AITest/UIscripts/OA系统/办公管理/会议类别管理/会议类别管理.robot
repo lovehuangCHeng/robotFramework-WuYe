@@ -10,15 +10,15 @@ Resource          ../../../通用方法.robot
     : FOR    ${WDLB}    IN RANGE    2
     \    新建会议类别
     sleep    1
-    关闭浏览器
+    [Teardown]    关闭浏览器
 
 编辑会议类别
     登录    ${会议类别管理}
     编辑会议类别
     sleep    1
-    关闭浏览器
+    [Teardown]    关闭浏览器
 
 删除会议类别
     登录    ${会议类别管理}
     删除会议类别
-    关闭浏览器
+    [Teardown]    关闭浏览器
