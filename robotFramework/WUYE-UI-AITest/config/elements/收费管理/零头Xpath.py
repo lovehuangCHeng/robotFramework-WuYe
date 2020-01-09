@@ -1,0 +1,10 @@
+#客户零头明细
+业主姓名="//input[@id='customerName']"
+开始日期输入="//input[@id='startDate']"
+结束日期输入="//input[@id='endDate']"
+搜索账户="//button[@id='btnFilterDetail']"
+概览数据存在断言="//div[@id='gridDetail']//tr[@class='k-master-row'][1]/td[3]"
+明细数据存在断言="//div[@id='gridDetail']//div[@class='k-grid k-widget']/table/tbody/tr/td[1]"
+收起明细按钮="//div[@id='gridDetail']//a[@class='k-icon k-minus']"
+展开明细按钮="//div[@id='gridDetail']//tr[1]//a[@class='k-icon k-plus']"
+重置搜索="//button[@id='btnReset']"

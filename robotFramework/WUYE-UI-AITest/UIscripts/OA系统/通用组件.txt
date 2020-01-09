@@ -1,0 +1,13 @@
+*** Settings ***
+Library           Selenium2Library
+Variables         ../../config/elements/OA系统/OAXpath.py
+
+*** Keywords ***
+登录1
+    [Arguments]    ${username}    ${password}    ${url}    ${testurl}
+    Open Browser    ${url}    chrome
+    Maximize Browser Window
+    input text    ${账号输入框}    ${username}
+    input text    ${密码输入框}    ${password}
+    Click Button    Xpath=//input[@type='submit']
+    Go To    ${testurl}

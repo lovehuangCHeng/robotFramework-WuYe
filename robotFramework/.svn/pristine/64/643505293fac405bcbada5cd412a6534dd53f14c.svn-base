@@ -1,0 +1,34 @@
+*** Settings ***
+Variables         ../../../../config/elements/收费管理/零头Xpath.py
+Library           Selenium2Library    timeout=20
+Resource          ../../../通用方法.robot
+
+*** Keywords ***
+查询零头账户
+    input text    ${业主姓名}    ${AcCname}
+    sleep    3
+    input text    ${开始日期输入}    1899/12/19
+    sleep    3
+    input text    ${结束日期输入}    2100/12/19
+    sleep    3
+    click button    ${搜索账户}
+    等待element元素可见    ${概览数据存在断言}
+    等待element元素可见    ${明细数据存在断言}
+    sleep    3
+    click element    ${收起明细按钮}
+    sleep    3
+    click element    ${展开明细按钮}
+    sleep    3
+    click button    ${重置搜索}
+    sleep    3
+    click button    ${重置搜索}
+    click button    ${搜索账户}
+    等待element元素可见    ${概览数据存在断言}
+    等待element元素可见    ${明细数据存在断言}
+    sleep    3
+
+数据查询
+    数据库查询操作    ${GetAccountInt1Cname}
+    ${AcCname}    set variable    ${var[0][0] }
+    Set Suite Variable    ${AcCname}
+    log    ${AcCname}
