@@ -62,7 +62,7 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${第二天}
     sleep    2
-    Click Element    ${每天的值}
+    Click Element    ${第二天的值}
     sleep    2
     Click Element    ${活动保存}
     sleep    2

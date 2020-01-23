@@ -39,6 +39,7 @@ six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']
 分组确定="xpath=//div[@class='ant-modal-footer']//button[2]"
 分组编辑="xpath=//div[@class='title___PhrXt']/span/span/button[1]"
 分组删除="xpath=//div[@class='title___PhrXt']/span/span/button[2]"
+
 #楼宇的元素
 楼宇tab="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']/div/div/div[2]"
 添加楼栋="xpath=//li[text()='添加楼栋']"
@@ -99,7 +100,7 @@ six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']
 添加广告位="xpath=//li[text()='添加广告位']"
 编辑广告位="xpath=//div[@class='ant-spin-container']/div/div[3]/div[@aria-hidden='false']//tbody/tr[1]/td[7]//a[1]"
 删除广告位="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[7]//a[2]"
-查看广告位="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[5]"
+查看广告位="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[5]/a"
 广告位号="xpath=//input[@id='code']"
 广告位楼层="xpath=//input[@id='floor']"
 已出租="xpath=//span[text()='已出租']"
@@ -110,6 +111,14 @@ six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']
 编辑单元="xpath=//div[@class='title___PhrXt']//button[1]"
 单元名称="id=name"
 单元序号="id=code"
+
+#断言
+删除成功断言="//div[@class='ant-message-custom-content ant-message-success']/span"
+楼宇名称断言="//div[@role='tabpanel'and @aria-hidden='false']//tbody/tr[1]/td[3]//a"
+停车场名称断言="//div[@role='tabpanel'and @aria-hidden='false']//tbody/tr[1]/td[3]//a"
+房间代码断言="//div[@class='ant-table-fixed-left']//tbody/tr[1]/td[4]//a"
+车位号断言="//div[@class='ant-spin-container']/div/div[3]/div[@aria-hidden='false']//tbody/tr[1]/td[2]//a"
+广告位号断言="//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[5]/a"
 
 #资源平面图
 关闭平面图查看="//i[@class='anticon anticon-close']"

@@ -6,7 +6,6 @@ class MyObject:
         return '<MyObject%s>' % self.index
     
 
-
 账号输入框="//input[@type='text']"
 密码输入框="//input[@type='password']"
 ##########银行托收明细##########
@@ -186,16 +185,12 @@ class MyObject:
 合同费用汇总表_选择管理区="//div[@id='regionId']/following-sibling::div//ul/li[1]"
 合同费用汇总表_时间段="//span[@id='date']//input"
 合同费用汇总表_选择月份="//table[@class='ant-calendar-month-panel-table']//tr[1]/td[1]"
-<<<<<<< .mine
 合同费用汇总表_重置="//form[@class='ant-form ant-form-horizontal']//button[@class='ant-btn']"
 合同费用汇总表_搜索="//div[@class='ant-col ant-col-24']/button[@class='ant-btn ant-btn-primary']"
-||||||| .r163
 合同费用汇总表_重置="//form/div[2]//div/button[1]"
 合同费用汇总表_搜索="//form/div[2]//div/button[2]"
-=======
 合同费用汇总表_重置="//form/div[3]//div/button[1]"
 合同费用汇总表_搜索="//form/div[3]//div/button[2]"
->>>>>>> .r180
 合同费用汇总表_表格="//table"
 合同费用汇总表_导出="//div[@class='ListButton___2jlS-']//button[@class='ant-btn']"
 ##########往年收欠率表##########

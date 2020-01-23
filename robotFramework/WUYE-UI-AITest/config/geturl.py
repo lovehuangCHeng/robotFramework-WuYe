@@ -1,17 +1,7 @@
 # Can be used in the test data like ${MyObject()} or ${MyObject(1)}
-class MyObject:
-    def __init__(self, index=''):
-        self.index = index
-    def __str__(self):
-        return '<MyObject%s>' % self.index
-
-basicURL='http://10.10.120.171:8083'
-#'http://beta.wuyezhijia.cn/'
-#'http://10.10.120.171:8083'
+basicURL='http://10.10.120.171:8081'
 loginURL='/Login'
-
 首页=basicURL+'/#/home'
-
 ##基础信息
 #房产管理
 物业资源管理=basicURL+'/#/PropertyManage/BasicResources'

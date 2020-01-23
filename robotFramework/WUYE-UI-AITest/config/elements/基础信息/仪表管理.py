@@ -21,7 +21,7 @@ class MyObject:
 仪表类型列表数据="xpath=//tbody/tr[1]/td[2]"
 仪表类型高级搜索="xpath=//div[@class='ListButton___2cfy4']/div/div[2]/a"
 仪表类型高级搜索按钮="xpath=//div[@class='ant-card-body']//button[2]"
-仪表类型确认删除="xpath=//div[@class='ant-popover-buttons']/button[1]"
+仪表类型确认删除="xpath=//div[@class='ant-popover-buttons']/button[2]"
 
 #断言
 更新仪表成功="//span[text()='更新仪表成功！']"

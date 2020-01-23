@@ -5,7 +5,7 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
 
 *** Keywords ***
 新建巡更点
-    [Arguments]    ${test}	${testcode}
+    [Arguments]    ${test}    ${testcode}
     Click Element    ${新建巡更点}
     sleep    2
     等待元素可用    ${管理区}
@@ -77,6 +77,7 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
     ${testluxian}    Time Random    巡更路线
     Set Suite Variable    ${testluxian}
     [Return]    ${testluxian}
+
 数字变量
     ${testno}    Time Random    11
     Set Suite Variable    ${testno}
@@ -93,7 +94,7 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
     [Return]    ${testjihua1}
 
 新建巡更路线
-    [Arguments]    ${test} 		${testno}
+    [Arguments]    ${test}    ${testno}
     Click Element    ${新建巡更路线}
     sleep    2
     等待元素可用    ${管理区_巡更路线}
@@ -163,7 +164,7 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
     sleep    2
 
 巡更计划新建
-    [Arguments]    ${test}    ${testluxian}
+    [Arguments]    ${test}
     Click Element    ${新建巡更计划}
     sleep    2
     等待元素可用    ${管理区_计划}
@@ -176,13 +177,15 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
     sleep    2
     Click Element    ${巡查路线}
     sleep    2
-    Click Element    //ul[@role='listbox']/li[text()='${testluxian}']
+    Click Element    ${巡更路线数据}
     sleep    2
     Input Text    ${巡查次数}    1
     sleep    2
     Click Element    ${经办人}
     sleep    2
     Click Element    ${经办人数据}
+    sleep    2
+    Click Element    ${确定经办人}
     sleep    2
     Click Element    ${开始时间}
     sleep    2
@@ -288,7 +291,7 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
     sleep    2
 
 巡更任务分配
-    Click Element    ${未开始状态}
+    Click Element    ${待分派状态}
     sleep    2
     Click Element    ${巡更任务分派}
     sleep    2

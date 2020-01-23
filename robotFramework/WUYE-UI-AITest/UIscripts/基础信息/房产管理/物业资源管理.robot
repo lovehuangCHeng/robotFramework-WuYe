@@ -10,24 +10,26 @@ Resource          ../../通用方法.robot
 
 新建分组
     登录    ${物业资源管理}
+	${testfz}	分组变量
     管理区搜索
-    新建分组    小区高程分组
+    新建分组    ${testfz}
     [Teardown]    关闭浏览器
 
 编辑分组
     登录    ${物业资源管理}
-    编辑分组    小区高程分组
+    编辑分组    ${testfz}
     [Teardown]    关闭浏览器
 
 删除分组
     登录    ${物业资源管理}
-    删除分组    小区高程分组
+    删除分组    ${testfz}
     [Teardown]    关闭浏览器
 
 新建楼宇
     登录    ${物业资源管理}
+	${testly}	楼宇变量
     管理区搜索
-    新建楼宇    UI楼宇
+    新建楼宇    ${testly}
     [Teardown]    关闭浏览器
 
 编辑楼宇
@@ -42,12 +44,12 @@ Resource          ../../通用方法.robot
 
 搜索楼宇
     登录    ${物业资源管理}
-    搜索楼宇    楼宇
+    搜索楼宇    ${testly}
     [Teardown]    关闭浏览器
 
 删除楼宇
     登录    ${物业资源管理}
-    删除楼宇
+    删除楼宇	${testly}
     [Teardown]    关闭浏览器
 
 导出楼宇
@@ -57,22 +59,24 @@ Resource          ../../通用方法.robot
 
 新建单元
     登录    ${物业资源管理}
-    单元新建    UI测试1单元
+	${testdy}	单元变量
+    单元新建    ${testdy}
     [Teardown]    关闭浏览器
 
 编辑单元
     登录    ${物业资源管理}
-    单元编辑    UI测试1单元
+    单元编辑    ${testdy}
     [Teardown]    关闭浏览器
 
 删除单元
     登录    ${物业资源管理}
-    单元删除    UI测试1单元
+    单元删除    ${testdy}
     [Teardown]    关闭浏览器
 
 新建停车场
     登录    ${物业资源管理}
-    停车场新建    测试1号停车场
+	${testtcc}	停车场变量
+    停车场新建    ${testtcc}
     [Teardown]    关闭浏览器
 
 编辑停车场
@@ -87,12 +91,12 @@ Resource          ../../通用方法.robot
 
 搜索停车场
     登录    ${物业资源管理}
-    停车场搜索    测试1号停车场
+    停车场搜索    ${testtcc}
     [Teardown]    关闭浏览器
 
 删除停车场
     登录    ${物业资源管理}
-    停车场删除    测试1号停车场
+    停车场删除    ${testtcc}
     [Teardown]    关闭浏览器
 
 导出停车场
@@ -102,7 +106,8 @@ Resource          ../../通用方法.robot
 
 新建房间
     登录    ${物业资源管理}
-    房间新建    testUI-1001
+	${testfj}	房间变量
+    房间新建    ${testfj}
     [Teardown]    关闭浏览器
 
 编辑房间
@@ -127,12 +132,12 @@ Resource          ../../通用方法.robot
 
 搜索房间
     登录    ${物业资源管理}
-    房间搜索    testUI-1001
+    房间搜索    ${testfj}
     [Teardown]    关闭浏览器
 
 删除房间
     登录    ${物业资源管理}
-    房间删除    testUI-1001
+    房间删除    ${testfj}
     [Teardown]    关闭浏览器
 
 导出房间
@@ -142,7 +147,8 @@ Resource          ../../通用方法.robot
 
 新建车位
     登录    ${物业资源管理}
-    车位新建    testUI-chewei1001
+	${testcw}	车位变量
+    车位新建    ${testcw}
     [Teardown]    关闭浏览器
 
 编辑车位
@@ -157,12 +163,12 @@ Resource          ../../通用方法.robot
 
 搜索车位
     登录    ${物业资源管理}
-    车位搜索    testUI-chewei1001
+    车位搜索    ${testcw}
     [Teardown]    关闭浏览器
 
 车位删除
     登录    ${物业资源管理}
-    车位删除    testUI-chewei1001
+    车位删除    ${testcw}
     [Teardown]    关闭浏览器
 
 车位导出
@@ -172,7 +178,8 @@ Resource          ../../通用方法.robot
 
 添加广告位
     登录    ${物业资源管理}
-    广告位新建    gaunggao-1001
+	${testggw}	广告位变量
+    广告位新建    ${testggw}
     [Teardown]    关闭浏览器
 
 编辑广告位
@@ -182,10 +189,10 @@ Resource          ../../通用方法.robot
 
 搜索广告位
     登录    ${物业资源管理}
-    广告位搜索    gaunggao-1001
+    广告位搜索    ${testggw}
     [Teardown]    关闭浏览器
 
 删除广告位
     登录    ${物业资源管理}
-    广告位删除    gaunggao-1001
+    广告位删除    ${testggw}
     [Teardown]    关闭浏览器

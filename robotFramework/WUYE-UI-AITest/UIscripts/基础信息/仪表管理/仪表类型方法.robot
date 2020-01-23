@@ -42,6 +42,7 @@ Resource          ../../通用方法.robot
     Click Element    ${仪表类型确认删除}
     sleep    2
 	断言值包含    ${删除仪表类型}	删除成功
+	sleep    2
 
 仪表类型高级搜索
     [Arguments]    ${name}

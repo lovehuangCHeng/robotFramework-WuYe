@@ -86,9 +86,11 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     click element    ${欠费月度统计_汇总到楼宇勾选框}
     sleep    0.5
     click button    ${欠费月度统计_搜索按钮}
+	sleep    0.5
     等待元素可用    ${欠费月度统计_汇总导出按钮}
     sleep    0.5
     click button    ${欠费月度统计_汇总导出按钮}
+	sleep    0.5
 
 欠费月度统计_汇总到收费项目
     数据库查询操作    ${guanliquID}

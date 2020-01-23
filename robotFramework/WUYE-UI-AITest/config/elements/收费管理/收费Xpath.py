@@ -41,7 +41,7 @@ class MyObject:
 收费标准选择管理区="//div[3]//li[@role='option'][last()]"
 收费项目下拉按钮="//div[@id='ChargeItemTypeId']//span"
 收费标准选择收费项目="//div[4]//li[@role='option'][1]"
-收费标准名称="//input[@id='Name']"
+收费标准名称="//input[@id='Name']"    
 勾选按月计费="//input[@type='radio' and @value='0']"
 勾选按用量计费="//input[@type='radio' and @value='2']"
 勾选按数量计费="//input[@type='radio' and @value='3']"

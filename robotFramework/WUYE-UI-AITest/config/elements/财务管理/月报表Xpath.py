@@ -36,7 +36,7 @@ class MyObject:
 欠费月度统计_费用应收日期结束="//input[@id='ShouldChargeEndDate']"
 欠费月度统计_选择一个收费项目="//ul[@id='select2-ChargeItemTypeIds-results']/li[1]"
 欠费月度统计_搜索按钮="//button[@id='btnSearch']"
-欠费月度统计_汇总导出按钮="//button[@id='btnExport']"
+欠费月度统计_汇总导出按钮="//button[@id='btnExport']//button[@id='btnExport']"
 欠费月度统计_汇总Tab="//ul[@id='tabHeader']/li[1]"
 欠费月度统计_汇总到楼宇勾选框="//input[@id='BuildingName']"
 欠费月度统计_所有管理区展开="//tbody/tr/td[1]/span[@class='k-icon k-i-arrow-e']"

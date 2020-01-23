@@ -30,7 +30,9 @@ class MyObject:
 电话号码="id=Phone"
 客户档案列表名称="xpath=//tbody/tr[1]/td[6]"
 弹框确定="xpath=//div[@class='modal-footer']/button"
-
+#断言
+客户档案断言="//div[@class='modal-content']/div/div[2]"
+客户名称断言="//tbody/tr[1]/td[6]"
 '''
 委员会成员
 '''

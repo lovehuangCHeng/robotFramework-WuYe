@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61558d58-96e6-4ff0-ae5e-ea6c22611b39" name="Default Changelist" comment="" />
+    <list default="true" id="61558d58-96e6-4ff0-ae5e-ea6c22611b39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WUYE-UI-AITest/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WUYE-UI-AITest/.idea" beforeDir="true" />
+      <change beforePath="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/基础信息/客户管理/客户管理中方法封装.robot" beforeDir="false" afterPath="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/基础信息/客户管理/客户管理中方法封装.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WUYE-UI-AITest/config/basicConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/WUYE-UI-AITest/config/basicConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WUYE-UI-AITest/config/geturl.py" beforeDir="false" afterPath="$PROJECT_DIR$/WUYE-UI-AITest/config/geturl.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,21 +19,23 @@
     <session id="-1117788220">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="16" />
+          <entry key="py" value="22" />
           <entry key="robot" value="55" />
           <entry key="txt" value="5" />
         </counts>
@@ -34,21 +43,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="16" />
+          <entry key="Python" value="22" />
           <entry key="Robot Feature" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="17" />
-          <entry key="py" value="532" />
+          <entry key="py" value="662" />
           <entry key="robot" value="1051" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="532" />
+          <entry key="Python" value="662" />
           <entry key="Robot Feature" value="1051" />
         </counts>
       </usages-collector>
@@ -57,10 +66,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/elements/OA系统/活动人事.py">
+        <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/geturl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="162">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/basicConfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="67" selection-start-column="67" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -88,13 +111,11 @@
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/基础信息/房产管理/绑定房产管理员.robot" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/基础信息/房产管理/房产管理方法.robot" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/账号密码.py" />
-        <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/geturl.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/elements/__init__.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/__init__.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/elements/baseConfig.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/baseConfig.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/sql.py" />
-        <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/basicConfig.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/通用方法.robot" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/OA系统/人事管理/人事管理.robot" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/OA系统/人事管理/人事管理方法.robot" />
@@ -104,6 +125,9 @@
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/elements/基础信息/仪表管理.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/elements/OA系统/活动人事.py" />
         <option value="$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/OA系统/活动管理/活动.robot" />
+        <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/basicConfig.py" />
+        <option value="$PROJECT_DIR$/WUYE-UI-AITest/UIconfig/geturl.py" />
+        <option value="$PROJECT_DIR$/WUYE-UI-AITest/config/geturl.py" />
       </list>
     </option>
   </component>
@@ -113,7 +137,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-48" />
     <option name="y" value="135" />
     <option name="width" value="1346" />
@@ -144,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,37 +184,26 @@
               <item name="robotFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="robotFramework" type="462c0819:PsiDirectoryNode" />
               <item name="WUYE-UI-AITest" type="462c0819:PsiDirectoryNode" />
-              <item name="UIscripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="robotFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="robotFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="WUYE-UI-AITest" type="462c0819:PsiDirectoryNode" />
-              <item name="UIscripts" type="462c0819:PsiDirectoryNode" />
-              <item name="OA系统" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="robotFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="robotFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="WUYE-UI-AITest" type="462c0819:PsiDirectoryNode" />
-              <item name="UIscripts" type="462c0819:PsiDirectoryNode" />
-              <item name="OA系统" type="462c0819:PsiDirectoryNode" />
-              <item name="活动管理" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/python/Lib/site-packages/Mylibrary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wuye" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wuye\robotFramework\WUYE-UI-AITest\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wuye\robotFramework\WUYE-UI-AITest\config" />
     </key>
@@ -241,12 +253,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30483872" />
@@ -400,33 +412,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/basicConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/__init__.py" />
     <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/baseConfig.py" />
     <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/通用方法.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="9" selection-start-line="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/geturl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -443,15 +433,9 @@
     <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/固定资产管理方法.robot">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/保洁计划.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/保洁任务.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/保洁问题.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/保洁计划.robot" />
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/保洁任务.robot" />
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/保洁问题.robot" />
     <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/UIscripts/物业管理/保洁管理/保洁管理方法.robot">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -525,10 +509,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/testpy.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/basicConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="67" selection-start-column="67" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/elements/OA系统/活动人事.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WUYE-UI-AITest/config/geturl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

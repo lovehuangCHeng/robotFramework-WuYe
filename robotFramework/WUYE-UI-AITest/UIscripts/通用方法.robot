@@ -2,10 +2,10 @@
 Library           Selenium2Library    implicit_wait=20
 Library           DatabaseLibrary
 Variables         ../config/sql.py
-Variables         ../config/geturl.py
 Variables         ../config/basicConfig.py
 Library           DateTime
 Library           Mylibrary
+Variables         ../config/geturl.py
 
 *** Keywords ***
 登录
@@ -15,11 +15,11 @@ Library           Mylibrary
     sleep    1
     等待元素可用    name=UserName
     sleep    1
-    input text    name=UserName    ${账号}
+    input text    name=UserName    ${username}
     sleep    1
     等待元素可用    name=Password
     sleep    1
-    input text    name=Password    ${密码}
+    input text    name=Password    ${password}
     sleep    1
     Click Button    Xpath=//input[@type='submit']
     sleep    2
@@ -70,7 +70,7 @@ Library           Mylibrary
 
 断言值包含
     [Arguments]    ${actualvalue}    ${expectvalue}
-	${text}		获取元素文本	${actualvalue}
+    ${text}    获取元素文本    ${actualvalue}
     should contain    ${text}    ${expectvalue}
 
 等待element元素可见

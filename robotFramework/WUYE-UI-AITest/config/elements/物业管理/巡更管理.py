@@ -12,7 +12,7 @@ class MyObject:
 搜索框="//input[@placeholder='搜索...']"
 搜索按钮="//span[@class='ant-input-suffix']/i"
 保存="//div[@class='ant-modal-footer']//button[2]"
-确认删除="//div[@class='ant-popover-buttons']/button"
+确认删除="//div[@class='ant-popover-buttons']/button[2]"
 导入Excel="//button/span[text()='导入Excel']"
 下载模板="//button/span[text()='下载模板']"
 高级搜索="//a[@class='seniorSearchBtn']"
@@ -20,7 +20,7 @@ class MyObject:
 '''
 巡更点
 '''
-新建巡更点="//div[@class='ant-col ant-col-16']/button[1]"
+新建巡更点="//button/span[text()='新建巡更点']/.."
 编辑巡更点="//tbody/tr[1]/td[7]//a[1]"
 删除巡更点="//tbody/tr[1]/td[7]//a[2]"
 作废巡更点="//tbody/tr[1]/td[7]//a[3]"
@@ -51,14 +51,15 @@ class MyObject:
 默认定点自拍="//ul[@role='listbox']/li[text()='定点自拍']"
 添加巡更点="//div[@id='pointIds']/button"
 选择巡更点="//div[@class='ant-modal-content']//tbody/tr[1]/td[1]"
-巡更点确定="/html/body/div[4]/div/div[2]/div/div[2]/div[3]/div/button[2]"  #目前的定位存在问题直接copy浏览器的定位。是div分块，不是固定的不好定位
+巡更点确定="//body/div[4]/div/div[2]/div/div[2]/div[3]/div/button[2]" 
+			
 		
 		
 
 '''
 巡更计划
 '''
-新建巡更计划="//div[@class='ant-col ant-col-16']/button[1]"
+新建巡更计划="//button/span[text()='新建巡更计划']/.."
 管理区_计划="id=organizationItemId"
 管理区_高级搜索="id=OrganizationItemId"
 管理区_计划数据="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][1]//ul[@role='listbox']/li[1]"
@@ -67,11 +68,12 @@ class MyObject:
 巡更路线数据="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][2]//ul[@role='listbox']/li[1]"
 巡查次数="id=times"
 巡更频率="id=frequency"
-经办人="id=staffId"
-经办人数据="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][2]//ul[@role='listbox']/li[1]"
-开始时间="//div[@class='ant-modal-content']//tbody/tr/td[2]/span/input"
+经办人="id=handlers"
+经办人数据="//tr[1]/td[@class='ant-table-selection-column']/span/label"
+确定经办人="//body/div[5]/div/div[2]/div/div[2]/div[@class='ant-modal-footer']/button[2]"
+巡更计划开始时间="//div[@class='ant-modal-content']//tbody/tr/td[2]/span/span/i"
 输入开始时间="//div[@class='ant-time-picker-panel-input-wrap']/input"
-结束时间="//div[@class='ant-modal-content']//tbody/tr/td[3]/span/input"
+巡更计划结束时间="//div[@class='ant-modal-content']//tbody/tr/td[3]/span/span/i"
 输入结束时间="//div[@class='ant-time-picker-panel-input-wrap']/input"
 ##未启用的状态##
 巡更计划查看="//tbody/tr[1]/td[2]//a"
@@ -90,6 +92,7 @@ class MyObject:
 ##巡更任务###
 管理区_任务="id=regionIds"
 管理区_任务数据="//ul[@role='listbox']/li[1]"
+待分派状态="//span[text()='待分派']"
 未开始状态="//span[text()='未开始']"
 待处理状态="//span[text()='待处理']"
 处理中状态="//span[text()='处理中']"

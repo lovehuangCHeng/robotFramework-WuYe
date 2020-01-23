@@ -37,8 +37,9 @@ Resource          ../../../通用方法.robot
 
 搜索文档资料
     Input Text    ${文档资料管理搜索框}    uite
-    sleep    1
+    sleep    2
     搜索框内置搜索按钮
+	sleep    2
 
 编辑保存文档资料
     Click Element    ${编辑文档资料}

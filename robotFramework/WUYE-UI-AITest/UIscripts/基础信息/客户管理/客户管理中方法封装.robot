@@ -7,7 +7,7 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     [Arguments]    ${name}    ${phoneNum}
     sleep    2
     Click Element    ${客户新建}
-    sleep	    2
+    sleep    2
     Input Text    ${客户名称}    ${name}
     sleep    2
     Click Element    ${选择管理区}
@@ -18,6 +18,8 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    2
     Click Element    ${客户档案保存}
     sleep    2
+	断言值包含    ${合并重名客户}	合并重名客户
+	sleep    2
 
 查询客户数据
     [Arguments]    ${name}
@@ -25,6 +27,8 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    2
     Click Element    ${客户档案搜索按钮}
     sleep    2
+	断言值包含    ${客户名称断言}	逐日者
+	sleep    2
 
 客户数据高级搜索
     [Arguments]    ${name}
@@ -35,6 +39,8 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    2
     Click Element    ${高级搜索按钮}
     sleep    2
+	断言值包含    ${客户名称断言}	逐日者
+	sleep    2
 
 编辑客户档案
     Click Element    ${表格中管理区数据}
@@ -43,12 +49,16 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    2
     Click Element    ${客户档案保存}
     sleep    2
+	断言值包含    ${合并重名客户}	合并重名客户
+	sleep    2
 
 合并重名客户
     Click Element    ${合并重名客户}
     sleep    2
     Click Element    ${关闭合并同名客户}
     sleep    2
+	断言值包含    ${合并重名客户}	合并重名客户
+	sleep    2
 
 删除新建客户
     Click Element    ${客户档案列表名称}
@@ -57,23 +67,26 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    2
     Click Element    ${确认删除按钮}
     sleep    2
-	
+	断言值包含    ${客户档案断言}	删除成功
+	sleep    2
+
 新建业主委员会
-	Click Element    ${新增成员}
+    Click Element    ${新增成员}
     sleep    2
-	Click Element    ${委员会取消}
+    Click Element    ${委员会取消}
     sleep    2
-	
+
 查询业主委员会
-	Click Element    ${委员会选择管理区}
+    Click Element    ${委员会选择管理区}
     sleep    2
-	Click Element    ${委员会管理区数据}
+    Click Element    ${委员会管理区数据}
     sleep    2
 
 iframr 切换
     Select Frame    id=wuYeIframe
     sleep    2
 	
-	
-	
-	
+客户名称变量
+    ${testname}    按时间自定义变量    逐日者
+	Set Suite Variable    ${testname}
+    [Return]    ${testname}

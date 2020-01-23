@@ -52,7 +52,45 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${确认删除}
     sleep    2
+	断言值包含    ${删除成功断言}	删除成功
+	sleep    2
 
+分组变量
+    ${testfz}    按时间自定义变量    高层分组
+	Set Suite Variable    ${testfz}
+    [Return]    ${testfz}
+	
+楼宇变量
+    ${testly}    按时间自定义变量    楼栋
+	Set Suite Variable    ${testly}
+    [Return]    ${testly}
+	
+停车场变量
+    ${testtcc}    按时间自定义变量    停车场
+	Set Suite Variable    ${testtcc}
+    [Return]    ${testtcc}
+	
+单元变量
+    ${testdy}    按时间自定义变量    单元
+	Set Suite Variable    ${testdy}
+    [Return]    ${testdy}	
+
+房间变量
+    ${testfj}    按时间自定义变量    UItest
+	Set Suite Variable    ${testfj}
+    [Return]    ${testfj}	
+
+
+车位变量
+    ${testcw}    按时间自定义变量    UIcw
+	Set Suite Variable    ${testcw}
+    [Return]    ${testcw}
+
+广告位变量
+    ${testggw}    按时间自定义变量    UIggw
+	Set Suite Variable    ${testggw}
+    [Return]    ${testggw}	
+	
 切换到楼宇标签
 	等待元素可用	${楼宇tab}
 	sleep    1
@@ -79,6 +117,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${搜索按钮}
     sleep    2
+	断言值包含    ${楼宇名称断言}	楼栋
+	sleep    2
 
 编辑楼宇
     切换到楼宇标签
@@ -99,14 +139,17 @@ Resource          ../../通用方法.robot
     sleep    2
 
 删除楼宇
+	[Arguments]    ${name}
     切换到楼宇标签
-    搜索楼宇    UI楼宇
+    搜索楼宇    ${name}
     Click Element    ${四个页面checkbox}
     sleep    2
     Click Element    ${楼宇删除}
     sleep    2
     Click Element    ${确认删除}
     sleep    2
+	断言值包含    ${删除成功断言}	删除成功
+	sleep    2
 
 楼宇导出
     切换到楼宇标签
@@ -147,6 +190,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${搜索按钮}
     sleep    2
+	断言值包含    ${停车场名称断言}	停车场
+	sleep    2
 
 停车场查看
     切换到停车场标签
@@ -164,6 +209,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${确认删除}
     sleep    2
+	断言值包含    ${删除成功断言}	删除成功
+	sleep    2
 
 停车场导出
     切换到停车场标签
@@ -198,6 +245,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${确认删除}
     sleep    2
+	断言值包含    ${删除成功断言}	删除成功
+	sleep    2
 
 切换到房间标签
 	等待元素可用	${房间tab}
@@ -268,6 +317,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${搜索按钮}
     sleep    2
+	断言值包含    ${房间代码断言}	UItest
+	sleep    2
 
 房间删除
     [Arguments]    ${name}
@@ -278,6 +329,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${确认删除}
     sleep    2
+	断言值包含    ${删除成功断言}	删除成功
+	sleep    2
 
 房间导出
     切换到房间标签
@@ -320,6 +373,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${搜索按钮}
     sleep    2
+	断言值包含    ${车位号断言}	UIcw
+	sleep    2
 
 车位删除
     [Arguments]    ${name}
@@ -328,6 +383,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${确认删除}
     sleep    2
+	断言值包含    ${删除成功断言}	删除成功
+	sleep    2
 
 车位导出
     切换到车位标签
@@ -365,6 +422,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${搜索按钮}
     sleep    2
+	断言值包含    ${广告位号断言}	UIggw
+	sleep    2
 
 广告位删除
     [Arguments]    ${name}
@@ -373,6 +432,8 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${确认删除}
     sleep    2
+	断言值包含    ${删除成功断言}	删除成功
+	sleep    2
 
 房产状态搜索
     [Arguments]    ${name}

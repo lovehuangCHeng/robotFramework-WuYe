@@ -6,7 +6,7 @@ class MyObject:
         return '<MyObject%s>' % self.index
 '''
 数据库配置连接信息
-sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_hualian_master_preview',UID='sa',PWD='Sa123456'"
+sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_zhongteng2019_1',UID='sa',PWD='Sa123456'"
 '''	
 
 '''
@@ -18,6 +18,7 @@ guanliquID="select top 1 ID from OrganizationItem where Discriminator='管理区
 查询楼宇数据
 '''
 louyu="select Name,code from OrganizationItem where Discriminator='楼宇';"
+louyuID="select TOP 1 ID from OrganizationItem where Discriminator='楼宇';"
 #管理区下楼宇id
 GLQLYID="select top 1 ID from OrganizationItem where Discriminator='楼宇' and parentid in(select top 1 ID from OrganizationItem where Discriminator='管理区')"
 #查询有账单房间的管理区ID,楼宇ID，房间ID
