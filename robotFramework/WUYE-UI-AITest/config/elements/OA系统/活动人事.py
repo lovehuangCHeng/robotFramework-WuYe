@@ -59,7 +59,7 @@ class MyObject:
 第二天="//div[@id='flight2']"
 每天的值="//li[text()='假']"
 第二天的值="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][2]//ul[@role='listbox']/li[1]"
-班组名称="id=groupName"
+班组名称="//div[@class='ant-modal-content']//input[@id='groupName']"
 排班周期="//div[@id='cycle']"  
 排班周期的值="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][1]//ul[@role='listbox']/li[1]"      
 排班日历="//div[@id='calendar']"

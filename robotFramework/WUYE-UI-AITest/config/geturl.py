@@ -92,18 +92,18 @@ loginURL='/Login'
 
 ##系统管理
 #系统设置
-图标版权设置=basicURL+'/#/Nova.Pms.CustomLogoManagement/CustomLogo/Index'
+图标版权设置=basicURL+'/#/Nova.Pms.SystemManagement/CustomLogo/Index'
 系统参数设置=basicURL+'/#/Nova.Pms.PropertyManagementSystem/DecimalDigitSetting/Index'
 支付方式配置=basicURL+'/#/paymentMethodSetting'
 系统初始化=basicURL+'/#/systemInit'
 打印设置=basicURL+'/#/Nova.Pms.PropertyManagementSystem/PrintTemplate/Index'
-数据备份=basicURL+'/#/Nova.Pms.DatabaseBackup/DatabaseBackup/Index'
+数据备份=basicURL+'/#/Nova.Pms.SystemManagement/DatabaseBackup/Index'
 操作日志=basicURL+'/#/operationLogManageList'
 轮播图设置=basicURL+'/#/SystemManage/SystemSetting/Swiper'
 #组织架构
-组织机构=basicURL+'/#/Nova.Pms.PropertyManagementSystem/Company/Index'
-权限管理=basicURL+'/#/Nova.Pms.Roles/Role/Index'
-用户管理=basicURL+'/#/Nova.Pms.Users/Staff/Index'
+组织机构=basicURL+'/#/GTLJ/SystemManage/Organization'
+权限管理=basicURL+'/#/GTLJ/SystemManage/AuthorityManage'
+用户管理=basicURL+'/#/GTLJ/SystemManage/UserManage'
 #财务对接配置
 基本设置=basicURL+'/#/financeSetting'
 科目配置=basicURL+'/#/financeItemSetting'

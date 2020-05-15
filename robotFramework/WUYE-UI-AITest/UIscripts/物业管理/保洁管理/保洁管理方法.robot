@@ -97,13 +97,16 @@ Resource          ../../通用方法.robot
     保洁计划搜索    ${testdata}
     Click Element    ${保洁计划启用}
     sleep    2
+	Click Element    ${确认删除}
+    sleep    2
 
 保洁计划停用
     [Arguments]    ${testdata}
     保洁计划搜索    ${testdata}
     Click Element    ${保洁计划停用}
     sleep    2
-
+	Click Element    ${确认删除}
+    sleep    2
 保洁任务搜索
     Click Element    ${管理区_任务}
     sleep    2
@@ -146,7 +149,7 @@ Resource          ../../通用方法.robot
     sleep    2
 
 保洁任务删除
-    Click Element    ${未开始状态}
+    Click Element    ${待处理状态}
     sleep    2
     Click Element    ${保洁任务删除}
     sleep    2

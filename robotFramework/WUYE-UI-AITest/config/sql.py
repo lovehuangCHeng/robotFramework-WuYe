@@ -6,7 +6,7 @@ class MyObject:
         return '<MyObject%s>' % self.index
 '''
 数据库配置连接信息
-sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_zhongteng2019_1',UID='sa',PWD='Sa123456'"
+sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_suda_0311',UID='sa',PWD='Sa123456'"
 '''	
 
 '''
@@ -91,3 +91,50 @@ GetBillPT0P0="select top 1 o.code,b.ShouldChargeDate,p.PaidDate,pt.TicketNumber,
 GetBillPT0P2="select top 1 o.code,b.ShouldChargeDate,p.PaidDate,pt.TicketNumber,c.name,c.RegionId FROM OrganizationItem o,PaymentLineItem pl, bill b, Payment p,PaymentTicket pt,Customer c,RefundTicket RT where o.id=b.OrganizationItemId and b.id=pl.BillId and pl.PaymentId=p.id and p.Id=pt.PaymentId and b.CustomerId=c.id and p.status=2 and b.IsDelete=0 and b.OrganizationItemId is not null and b.PaidAmount <> 0 and (b.ActualAmount-b.PaidAmount)>0 and  pt.id <> RT.PaymentTicketId"
 ##---------1.查询已出已退款帐账单对应的房间代码、客户名称、应收日期、收费日期、票据号------------------
 GetBillPT2P0="select top 1 o.code,b.ShouldChargeDate,p.PaidDate,pt.TicketNumber,c.name,c.RegionId FROM OrganizationItem o,PaymentLineItem pl, bill b, Payment p,PaymentTicket pt,Customer c where o.id=b.OrganizationItemId and b.id=pl.BillId and pl.PaymentId=p.id and p.Id=pt.PaymentId and b.CustomerId=c.id and p.status=0 and pt.Status=0 and b.IsDelete=0 and p.PaidMoney < 0 "
+'''
+查询模块是否开启
+'''
+#查询OA模块是否开启
+modelOA="select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.OfficeManage'), 0)"
+#查询活动模块是否开启
+'''
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.GroupCampaign'), 0)
+#查询公告模块是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.AnnouncementManagement'), 0)
+#查询绿化管理模块是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.GreenManagement'), 0)
+#查询轮播图模块是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.System.Swiper'), 0)
+#查询出入管理模块是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.ParkingManagement'), 0)
+#查询固定资产模块是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.FixedAssetsManagement'), 0)
+#查询委托合同模块是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.DelegateContract'), 0)
+#查询代收货款是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.PaymentCollection'), 0)
+#查询招商管理是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.Lead'), 0)
+#查询巡更管理是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.PatrolManagement'), 0)  
+#查询收支管理是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.IncomeExpensesManagement'), 0)  
+#查询智能排班是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.WorkShift'), 0)  
+#查询合同租赁模块是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.Contract'), 0)  
+#查询物料管理是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.MaterialManagement'), 0) 
+#查询设备管理是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.DeviceManagement'), 0)  
+#查询业主委员会是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.OwnersCommitteeManagement'), 0)  
+#查询邮包管理是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.ParcelManagement'), 0)  
+#查询品质巡查是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.QualityInspectionManagement'), 0)  	
+#查询银行托收是否开启
+select isnull((select top(1) 1 from SaaS_ShellFeature where Id='Nova.Pms.BankAutoPayment'), 0)
+'''
+
+

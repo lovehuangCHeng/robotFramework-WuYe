@@ -101,7 +101,7 @@ class MyObject:
 超时完成状态="//span[text()='超时完成']"
 巡更任务查看="//tbody/tr[1]/td[2]//a"
 ###待分派状态##
-巡更任务添加备注="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td/span/span[3]/a"
+巡更任务添加备注="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td/span/span[1]/a"
 添加备注信息="id=remark"
 巡更任务删除="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td/span/span[2]/a"
 巡更任务分派="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td/span/span[1]/a"

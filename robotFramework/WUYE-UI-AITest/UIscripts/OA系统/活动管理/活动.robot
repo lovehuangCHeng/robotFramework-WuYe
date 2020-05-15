@@ -3,6 +3,7 @@ Resource          活动方法.robot
 Resource          ../../通用方法.robot
 
 *** Test Cases ***
+
 新建活动类别
     [Setup]    登录    ${活动列表}
     活动类别新建    活动类别

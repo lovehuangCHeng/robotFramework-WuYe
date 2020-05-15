@@ -73,37 +73,36 @@ Resource          ../../通用方法.robot
     sleep    2
     Click Element    ${活动保存}
     sleep    2
-	
+
 排班分组新建
-	切换到分组tab
+    切换到分组tab
     Click Element    ${分组新建}
     sleep    2
-    Input Text    ${班组名称}    两天计划
+    Input Text    ${班组名称}    测试分组
     sleep    2
     Click Element    ${排班周期}
     sleep    2
-	Click Element    ${排班周期的值}
+    Click Element    ${排班周期的值}
     sleep    2
     Click Element    ${排班日历}
     sleep    2
-	Click Element    ${排班日历的值}
+    Click Element    ${排班日历的值}
     sleep    2
-	Click Element    ${班组员工}
+    Click Element    ${班组员工}
     sleep    2
-	Click Element    ${班组员工数据}
+    Click Element    ${班组员工数据}
     sleep    2
-	Click Element    ${活动保存}
+    Click Element    ${活动保存}
     sleep    2
-	
+
 排班分组编辑
     切换到分组tab
     Click Element    ${排班分组编辑}
     sleep    2
     Click Element    ${活动保存}
     sleep    2
-	
+
 排班分组查看
     切换到分组tab
     Click Element    ${排班分组查看}
     sleep    2
-    

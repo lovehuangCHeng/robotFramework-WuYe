@@ -187,11 +187,11 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
     sleep    2
     Click Element    ${确定经办人}
     sleep    2
-    Click Element    ${开始时间}
+    Click Element    ${巡更计划开始时间}
     sleep    2
     Input Text    ${输入开始时间}    06:00
     sleep    2
-    Click Element    ${结束时间}
+    Click Element    ${巡更计划结束时间}
     sleep    2
     Input Text    ${输入结束时间}    18:00
     sleep    2
@@ -250,11 +250,15 @@ Variables         ../../../config/elements/物业管理/巡更管理.py
     巡更计划搜索    ${testdata}
     Click Element    ${巡更计划启用}
     sleep    2
+	Click Element    ${确认删除}
+    sleep    2
 
 巡更计划停用
     [Arguments]    ${testdata}
     巡更计划搜索    ${testdata}
     Click Element    ${巡更计划停用}
+    sleep    2
+	Click Element    ${确认删除}
     sleep    2
 
 巡更任务搜索
