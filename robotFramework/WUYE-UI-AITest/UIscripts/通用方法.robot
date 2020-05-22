@@ -122,6 +122,7 @@ Variables         ../config/geturl.py
     [Return]    ${value}
 
 登录保存cookie
+	[Arguments]    ${testurl}
     Open Browser    ${basicURL}    chrome
     Maximize Browser Window
     sleep    1
@@ -138,12 +139,19 @@ Variables         ../config/geturl.py
     click element    Xpath=//input[@type='submit']
     ${cookies}    get cookies
     存储cookie到文件    ${cookies}
+	sleep    2
+    Go To    ${testurl}
+    sleep    2
 
 登录
     [Arguments]    ${testurl}
-    Selenium2Library.Open Browser    ${testurl}    Chrome
+    Open Browser    ${testurl}    Chrome
     ${m}    读取cookie
-    Selenium2Library.Add Cookie    nova_pms_auth_Default    ${m}
+    Add Cookie    nova_pms_auth_Default    ${m}
     sleep    0.5
-    Selenium2Library.Go To    ${testurl}
-    Selenium2Library.Go To    ${testurl}
+	Maximize Browser Window
+    sleep    1
+    Go To    ${testurl}
+	sleep    0.5
+    Go To    ${testurl}
+	sleep    3
