@@ -60,6 +60,50 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     click button    ${已收费用日报_按收款日期汇总_导出}
     sleep    3
 
+已收费用日报_本期往期汇总_搜索
+    数据库查询操作    ${guanliquID}
+    sleep    0.5
+    等待element元素可见    //li[@id='${var[0][0]}']/a
+    sleep    0.5
+    #选中管理区
+    click element    //li[@id='${var[0][0]}']/a
+    sleep    0.5
+    等待element元素可见    ${已收费用日报_本期往期汇总tab}
+    sleep    0.5
+    click element    ${已收费用日报_本期往期汇总tab}
+    sleep    0.5
+    等待元素可用    ${已收费用日报_按收费项目汇总_显示收费标准}
+    sleep    0.5
+    click element    ${已收费用日报_按收费项目汇总_显示收费标准}
+    sleep    0.5
+    click element    ${已收费用日报_收款日期}
+    sleep    0.5
+    click element    ${已收费用日报_选择收款日期_本月}
+    sleep    2
+
+已收费用日报_本期往期汇总_导出
+    数据库查询操作    ${guanliquID}
+    sleep    0.5
+    等待element元素可见    //li[@id='${var[0][0]}']/a
+    sleep    0.5
+    #选中管理区
+    click element    //li[@id='${var[0][0]}']/a
+    sleep    0.5
+    等待element元素可见    ${已收费用日报_本期往期汇总tab}
+    sleep    0.5
+    click element    ${已收费用日报_本期往期汇总tab}
+    sleep    2
+    sleep    0.5
+    click element    ${已收费用日报_收款日期}
+    sleep    0.5
+    click element    ${已收费用日报_选择收款日期_今年}
+    sleep    0.5
+    等待元素可用    ${已收费用日报_按收费项目汇总_导出}
+    sleep    0.5
+    click button    ${已收费用日报_按收费项目汇总_导出}
+    sleep    3	
+	
+	
 已收费用日报_按收费项目汇总_搜索
     数据库查询操作    ${guanliquID}
     sleep    0.5
@@ -78,7 +122,7 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click element    ${已收费用日报_收款日期}
     sleep    0.5
-    click element    ${已收费用日报_选择收款日期_今年}
+    click element    ${已收费用日报_选择收款日期_本月}
     sleep    2
 
 已收费用日报_按收费项目汇总_导出
@@ -98,9 +142,9 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click element    ${已收费用日报_选择收款日期_今年}
     sleep    0.5
-    等待元素可用    ${已收费用日报_按收费项目汇总_导出}
+    等待元素可用    ${已收费用日报_收费明细_导出}
     sleep    0.5
-    click button    ${已收费用日报_按收费项目汇总_导出}
+    click button    ${已收费用日报_收费明细_导出}
     sleep    3
 
 已收费用日报_收费明细_搜索

@@ -28,8 +28,8 @@ class MyObject:
 #总公司层级定位6个tab页面，管理区、楼宇、停车场、房间、车位、广告位,返回的是数组需要处理。
 six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']/div/div/div[2]"
 #不能用这个查找房间的CheckBox。
-四个页面checkbox="xpath=//div[@role='tabpanel'and @aria-hidden='false']//tbody/tr[1]/td[1]//input"
-管理区查看="xpath=//div[@class='ant-table-wrapper']//tbody/tr[1]/td[7]//a"
+四个页面checkbox="//div[@role='tabpanel'and @aria-hidden='false']//tbody/tr[1]/td[1]//input"
+管理区查看="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td[1]//a"
 #分组的按钮
 添加分组="xpath=//li[text()='添加分组']"
 分组名称="xpath=//input[@id='name']"
@@ -49,7 +49,7 @@ six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']
 楼宇备注="xpath=//textarea[@id='remark']"
 楼宇取消="xpath=//div[@class='ant-modal-footer']/div/button[1]"
 楼宇确定="xpath=//div[@class='ant-modal-footer']/div/button[2]"
-楼宇编辑="xpath=//div[@class='ant-table-fixed-right']//tr[1]//a[1]"
+楼宇编辑="//div[@class='ant-table-fixed-right']//tr[1]//a[text()='编辑']"
 楼宇删除="xpath=//div[@class='ant-table-fixed-right']//tr[1]//a[2]"
 楼宇查看="xpath=//div[@role='tabpanel'and @aria-hidden='false']//tbody/tr[1]/td[3]//a"
 #停车场元素
@@ -68,10 +68,10 @@ six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']
 房间tab="//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']/div/div/div[4]"
 楼宇添加下级="xpath=//div[@class='drawer-top-bar']//button[2]"
 添加房间="xpath=//li[text()='添加房间']"
-房间编辑="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[1]//a[1]"
-房间删除="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[1]//a[2]"
+房间编辑="//div[@role='tabpanel']//tbody/tr[1]/td[1]//a[text()='编辑']"
+房间删除="//div[@role='tabpanel']//tbody/tr[1]/td[1]//a[text()='删除']"
 房间CheckBox="xpath=//div[@class='ant-table-fixed-left']//tbody/tr[1]/td[1]"
-房间查看="xpath=//div[@class='ant-table-fixed-left']//tbody/tr[1]/td[4]//a"
+房间查看="//tbody/tr[1]/td[4]//a"
 房间查看页面关闭="xpath=//button[@class='ant-drawer-close']"
 业主管理="xpath=//div[@class='ant-tabs-extra-content']/button"
 业主="xpath=//div[text()='业主']"
@@ -88,9 +88,9 @@ six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']
 车位tab="//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']/div/div/div[5]"
 添加车位="xpath=//div[@class='drawer-top-bar']//button[2]"
 车位查看="xpath=//div[@class='ant-spin-container']/div/div[3]/div[@aria-hidden='false']//tbody/tr[1]/td[2]//a"
-车位编辑="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[1]//a[1]"
-车位删除="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[1]//a[2]"
-绑定业主="xpath=//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[1]//a[3]"
+车位编辑="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td[1]//a[text()='编辑']"
+车位删除="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td[1]//a[text()='删除']"
+绑定业主="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td[1]//a[text()='绑定业主']"
 车位号="xpath=//input[@id='parkingPlaceNumber']"
 车位面积="xpath=//input[@id='parkingArea']"
 车位业主="xpath=//div[@id='ownerId']"                      
@@ -116,8 +116,8 @@ six="xpath=//div[@class='ant-spin-container']//div[@class='ant-tabs-nav-scroll']
 删除成功断言="//div[@class='ant-message-custom-content ant-message-success']/span"
 楼宇名称断言="//div[@role='tabpanel'and @aria-hidden='false']//tbody/tr[1]/td[3]//a"
 停车场名称断言="//div[@role='tabpanel'and @aria-hidden='false']//tbody/tr[1]/td[3]//a"
-房间代码断言="//div[@class='ant-table-fixed-left']//tbody/tr[1]/td[4]//a"
-车位号断言="//div[@class='ant-spin-container']/div/div[3]/div[@aria-hidden='false']//tbody/tr[1]/td[2]//a"
+房间代码断言="//tbody/tr[1]/td[4]//a"
+车位号断言="//tbody/tr[1]/td[2]//a"
 广告位号断言="//div[@role='tabpanel'and@aria-hidden='false']//tbody/tr[1]/td[5]/a"
 
 #资源平面图

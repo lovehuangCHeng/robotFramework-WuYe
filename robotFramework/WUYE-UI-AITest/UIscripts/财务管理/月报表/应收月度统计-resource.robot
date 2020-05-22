@@ -106,6 +106,10 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     sleep    0.5
     click element    ${应收月度统计_期初欠费所有项目展开}
     sleep    0.5
+	click element    ${应收月度统计_期初欠费所有项目展开}
+    sleep    0.5
+	等待element元素可见    ${应收月度统计_本期应收所有项目展开}
+	sleep    0.5
     click element    ${应收月度统计_本期应收所有项目展开}
 
 应收月度统计_导出统计数据

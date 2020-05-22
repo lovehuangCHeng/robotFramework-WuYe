@@ -7,7 +7,7 @@ Resource          ../../通用方法.robot
 新建权限
     等待element元素可见    ${新建权限按钮}
     sleep    2
-    click button    ${新建权限按钮}
+    click element    ${新建权限按钮}
     sleep    15
     Input Text    ${权限名称输入框}    RF权限名称
     sleep    0.5
@@ -15,14 +15,13 @@ Resource          ../../通用方法.robot
     sleep    0.5
     click element    ${所有数据权限单选框}
     sleep    0.5
-    click button    ${新建编辑权限保存按钮}
+    click element    ${保存按钮}
+	sleep    0.5
 
 编辑权限
     等待element元素可见    ${编辑权限按钮}
     sleep    0.5
-    click element    ${一条权限数据}
-    sleep    0.5
-    click button    ${编辑权限按钮}
+    click element    ${编辑权限按钮}
     sleep    15
     Input Text    ${权限名称输入框}    RF权限名称1
     sleep    0.5
@@ -30,24 +29,20 @@ Resource          ../../通用方法.robot
     sleep    0.5
     click element    ${所属管理区权限单选框}
     sleep    0.5
-    click button    ${新建编辑权限保存按钮}
+    click element    ${保存按钮}
 
 搜索权限
     等待element元素可见    ${简单搜索权限输入框}
     sleep    0.5
-    Input Text    ${简单搜索权限输入框}    RF
+    Input Text    ${简单搜索权限输入框}    RF权限名称
     sleep    0.5
-    click button    ${简单搜索权限按钮}
+    click element    ${简单搜索按钮}
+	sleep    0.5
 
 删除权限
-    等待element元素可见    ${简单搜索权限输入框}
+    搜索权限
     sleep    0.5
-    Input Text    ${简单搜索权限输入框}    RF
+    click element    ${删除权限按钮}
     sleep    0.5
-    click button    ${简单搜索权限按钮}
-    sleep    0.5
-    click element    ${一条权限数据}
-    sleep    0.5
-    click button    ${删除权限按钮}
-    sleep    0.5
-    click element    ${确认删除权限按钮}
+    click element    ${确认删除按钮}
+	sleep    0.5

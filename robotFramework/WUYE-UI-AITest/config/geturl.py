@@ -9,7 +9,7 @@ loginURL='/Login'
 房产状态统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/ResourcesSummaryReport/Index'
 绑定房产管理员=basicURL+'/#/basicResourceManager'
 #客户管理
-客户档案=basicURL+'/#/Nova.Pms.PropertyManagementSystem/Customer/Index'
+客户档案=basicURL+'/#/GTLJ/BasicInformation/Customer'
 业主委员会=basicURL+'/#/ownersCommitteeManagement/committeeMemberList'
 #仪表管理
 仪表类型=basicURL+'/#/BasicInformationManage/MeterManage/MeterType'

@@ -114,6 +114,8 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     sleep    0.5
     click element    ${欠费月度统计_汇总到收费项目勾选框}
     sleep    3
+    click button    ${欠费月度统计_搜索按钮}
+	sleep    0.5
     等待元素可用    ${欠费月度统计_汇总导出按钮}
     sleep    0.5
     click button    ${欠费月度统计_汇总导出按钮}
@@ -144,7 +146,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     click button    ${欠费月度统计_客户资源汇总导出按钮}
 
 欠费月度统计_客户资源汇总查看资源详情
-    数据库查询操作    ${guanliquID}
+    数据库查询操作    ${GLQLYID}
     sleep    0.5
     等待element元素可见    //li[@id='${var[0][0]}']/a
     sleep    0.5
@@ -215,7 +217,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     click button    ${欠费月度统计_导出欠费汇总按钮}
 
 欠费月度统计_客户资源明细查看资源详情
-    数据库查询操作    ${guanliquID}
+    数据库查询操作    ${GLQLYID}
     sleep    0.5
     等待element元素可见    //li[@id='${var[0][0]}']/a
     sleep    0.5

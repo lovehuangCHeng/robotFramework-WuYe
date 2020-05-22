@@ -13,7 +13,7 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click element    ${综合收费率报表_管理区}
     sleep    0.5
-    click element    ${综合收费率报表_选择管理区}
+    搜索输入中的管理区
     sleep    0.5
     click element    ${综合收费率报表_收费项目}
     sleep    0.5
@@ -33,7 +33,7 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click element    ${综合收费率报表_管理区}
     sleep    0.5
-    click element    ${综合收费率报表_选择管理区}
+    搜索输入中的管理区
     sleep    0.5
     click button    ${综合收费率报表_搜索}
     sleep    0.5
@@ -47,7 +47,7 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click element    ${综合收费率报表_管理区}
     sleep    0.5
-    click element    ${综合收费率报表_选择管理区}
+    搜索输入中的管理区
     sleep    0.5
     click button    ${综合收费率报表_搜索}
     sleep    0.5
@@ -62,4 +62,13 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     click element    ${综合收费率报表_本年应收搜索按钮}
     sleep    0.5
     等待element元素可见    ${综合收费率报表_本年应收表格}
+    sleep    0.5
+	
+搜索输入中的管理区
+	数据库查询操作    ${guanliqu}
+    sleep    0.5
+    等待element元素可见    //span[text()='${var[0][0]}']
+    sleep    0.5
+    #选中管理区
+    click element    //span[text()='${var[0][0]}']
     sleep    0.5

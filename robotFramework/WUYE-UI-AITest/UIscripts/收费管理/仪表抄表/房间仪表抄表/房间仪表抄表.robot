@@ -9,19 +9,16 @@ Library           Selenium2Library
     登录    ${房间仪表抄表}
     进入iframe
     抄表进度概况
-    sleep    1
     [Teardown]    关闭浏览器
 
 抄表进度明细(抄表)
     登录    ${房间仪表抄表}
     进入iframe
     抄表进度明细(抄表)
-    sleep    1
     [Teardown]    关闭浏览器
 
 抄表历史记录
     登录    ${房间仪表抄表}
     进入iframe
     抄表历史记录
-    sleep    1
     [Teardown]    关闭浏览器

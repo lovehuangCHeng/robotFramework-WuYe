@@ -6,25 +6,21 @@ Resource          ../../通用方法.robot
 
 *** Test Cases ***
 新建权限
-    登录    ${权限管理}
-    进入iframe
+	[Setup]    登录    ${权限管理}
     新建权限
     [Teardown]    关闭浏览器
 
 编辑权限
-    登录    ${权限管理}
-    进入iframe
+    [Setup]    登录    ${权限管理}
     编辑权限
     [Teardown]    关闭浏览器
 
 搜索权限
-    登录    ${权限管理}
-    进入iframe
+    [Setup]    登录    ${权限管理}
     搜索权限
     [Teardown]    关闭浏览器
 
 删除权限
-    登录    ${权限管理}
-    进入iframe
+    [Setup]    登录    ${权限管理}
     删除权限
     [Teardown]    关闭浏览器

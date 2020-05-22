@@ -6,7 +6,7 @@ class MyObject:
         return '<MyObject%s>' % self.index
 '''
 数据库配置连接信息
-sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_suda_0311',UID='sa',PWD='Sa123456'"
+sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_xinye_0511',UID='sa',PWD='Sa123456'"
 '''	
 
 '''

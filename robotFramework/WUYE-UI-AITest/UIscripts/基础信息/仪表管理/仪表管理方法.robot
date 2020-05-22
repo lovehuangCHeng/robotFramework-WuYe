@@ -40,6 +40,8 @@ Resource          ../../通用方法.robot
 	sleep    2
 	
 房间仪表编辑
+	等待element元素可见    ${仪表房间列表}
+    sleep    1
     Click Element    ${仪表房间列表}
     sleep    2
     Click Element    ${仪表编辑}
@@ -51,12 +53,16 @@ Resource          ../../通用方法.robot
 	
 房间仪表搜索
     [Arguments]    ${name}
+	等待element元素可见    ${仪表搜索框}
+    sleep    1
     Input Text    ${仪表搜索框}    ${name}
     sleep    2
     Click Element    ${仪表搜索按钮}
     sleep    2
 
 房间仪表删除方法
+	等待element元素可见    ${仪表房间列表}
+    sleep    1
     Click Element    ${仪表房间列表}
     sleep    2
     Click Element    ${仪表删除}
@@ -67,6 +73,8 @@ Resource          ../../通用方法.robot
 	sleep    2
 	
 仪表高级搜索方法
+	等待element元素可见    ${仪表向下展开按钮}
+    sleep    1
     Click Element    ${仪表向下展开按钮}
     sleep    2
     Click Element    ${仪表高级搜索按钮}
@@ -75,6 +83,8 @@ Resource          ../../通用方法.robot
     sleep    2
 
 房间仪表换表
+	等待element元素可见    ${仪表房间列表}
+    sleep    1
     Click Element    ${仪表房间列表}
     sleep    2
     Click Element    ${仪表换表}
@@ -85,6 +95,8 @@ Resource          ../../通用方法.robot
     sleep    2
 
 房间仪表批量添加
+	等待element元素可见    ${仪表房间列表}
+    sleep    1
     Click Element    ${仪表房间列表}
     sleep    2
     Click Element    ${房间仪表批量添加}
@@ -96,6 +108,8 @@ Resource          ../../通用方法.robot
 
 公摊仪表新建
     [Arguments]    ${name}
+	等待element元素可见    ${仪表新建}
+    sleep    1
     Click Element    ${仪表新建}
     sleep    2
 	等待element元素可见    ${公摊仪表名称}
@@ -119,6 +133,8 @@ Resource          ../../通用方法.robot
 	
 公摊仪表新建1
     [Arguments]    ${name}
+	等待element元素可见    ${仪表新建}
+    sleep    1
     Click Element    ${仪表新建}
     sleep    2
     Input Text    ${公摊仪表名称}    ${name}

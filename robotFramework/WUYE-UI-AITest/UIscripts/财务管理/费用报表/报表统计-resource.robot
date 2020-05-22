@@ -29,10 +29,6 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     等待element元素可见    ${报表统计_表格}
     sleep    1
-    等待元素可用    ${报表统计_重置}
-    sleep    1
-    click button    ${报表统计_重置}
-    sleep    2
 
 报表统计_导出
     等待element元素可见    ${报表统计_资源}

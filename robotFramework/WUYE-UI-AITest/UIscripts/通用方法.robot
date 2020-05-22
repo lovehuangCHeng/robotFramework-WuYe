@@ -8,7 +8,7 @@ Library           Mylibrary
 Variables         ../config/geturl.py
 
 *** Keywords ***
-登录
+登录登录
     [Arguments]    ${testurl}
     Open Browser    ${basicURL}    chrome
     Maximize Browser Window
@@ -21,7 +21,9 @@ Variables         ../config/geturl.py
     sleep    1
     input text    name=Password    ${password}
     sleep    1
-    Click Button    Xpath=//input[@type='submit']
+    等待元素可用    Xpath=//input[@type='submit']
+    sleep    1
+    click element    Xpath=//input[@type='submit']
     sleep    2
     Go To    ${testurl}
     sleep    2
@@ -39,7 +41,7 @@ Variables         ../config/geturl.py
 
 二次确认
     sleep    2
-    Click Button    //button[@class='ant-btn ant-btn-primary ant-btn-sm']
+    click element    //button[@class='ant-btn ant-btn-primary ant-btn-sm']
 
 搜索框内置搜索按钮
     Click Element    //span[@class='ant-input-suffix']
@@ -86,7 +88,7 @@ Variables         ../config/geturl.py
 
 等待元素可用
     [Arguments]    ${var}
-    Wait Until Element Is Enabled    ${var}
+    Wait Until Element Is Enabled    ${var}    timeout=20
 
 获取元素文本
     [Arguments]    ${locator}
@@ -110,3 +112,38 @@ Variables         ../config/geturl.py
 删除变量
     [Arguments]    ${var}
     DelVar    ${var}
+
+存储cookie到文件
+    [Arguments]    ${cookies}
+    save_Cookis    ${cookies}
+
+读取cookie
+    ${value}    set_Cookie
+    [Return]    ${value}
+
+登录保存cookie
+    Open Browser    ${basicURL}    chrome
+    Maximize Browser Window
+    sleep    1
+    等待元素可用    name=UserName
+    sleep    1
+    input text    name=UserName    ${username}
+    sleep    1
+    等待元素可用    name=Password
+    sleep    1
+    input text    name=Password    ${password}
+    sleep    1
+    等待元素可用    Xpath=//input[@type='submit']
+    sleep    1
+    click element    Xpath=//input[@type='submit']
+    ${cookies}    get cookies
+    存储cookie到文件    ${cookies}
+
+登录
+    [Arguments]    ${testurl}
+    Selenium2Library.Open Browser    ${testurl}    Chrome
+    ${m}    读取cookie
+    Selenium2Library.Add Cookie    nova_pms_auth_Default    ${m}
+    sleep    0.5
+    Selenium2Library.Go To    ${testurl}
+    Selenium2Library.Go To    ${testurl}

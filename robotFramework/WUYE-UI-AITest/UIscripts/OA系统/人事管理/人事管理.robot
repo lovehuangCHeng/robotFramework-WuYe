@@ -4,7 +4,7 @@ Resource          ../../通用方法.robot
 
 *** Test Cases ***
 考勤管理新建
-    [Setup]    登录    ${考勤管理}
+    [Setup]    登录保存cookie    ${考勤管理}
     ${testdata}    新建员工变量
     考勤管理新建    ${testdata}
     [Teardown]    关闭浏览器

@@ -11,19 +11,9 @@ Variables         ../../../config/elements/财务管理/欠费报表Xpath.py
     sleep    0.5
     click element    ${欠费按时长分阶统计_费用时段_开始}
     sleep    0.5
-    click element    ${欠费按时长分阶统计_费用时段_结束}
-    sleep    0.5
     click element    ${欠费按时长分阶统计_管理区}
     sleep    0.5
     click element    ${欠费按时长分阶统计_选择管理区}
-    sleep    0.5
-    click element    ${欠费按时长分阶统计_收费项目}
-    sleep    0.5
-    click element    ${欠费按时长分阶统计_选择收费项目}
-    sleep    0.5
-    click element    ${欠费按时长分阶统计_楼宇停车场}
-    sleep    0.5
-    click element    ${欠费按时长分阶统计_选择楼宇停车场}
     sleep    0.5
     click button    ${欠费按时长分阶统计_搜索}
     sleep    0.5
@@ -40,8 +30,6 @@ Variables         ../../../config/elements/财务管理/欠费报表Xpath.py
     click element    ${欠费按时长分阶统计_费用时段}
     sleep    0.5
     click element    ${欠费按时长分阶统计_费用时段_开始}
-    sleep    0.5
-    click element    ${欠费按时长分阶统计_费用时段_结束}
     sleep    0.5
     click element    ${欠费按时长分阶统计_管理区}
     sleep    0.5

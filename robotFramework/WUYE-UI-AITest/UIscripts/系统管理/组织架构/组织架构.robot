@@ -6,31 +6,26 @@ Resource          组织架构-resource.robot
 
 *** Test Cases ***
 新建分公司
-    登录    ${组织机构}
-    进入iframe
+    [Setup]    登录    ${组织机构}
     新建分公司
     [Teardown]    关闭浏览器
 
 新建部门
-    登录    ${组织机构}
-    进入iframe
+    [Setup]    登录    ${组织机构}
     新建部门
     [Teardown]    关闭浏览器
 
 编辑组织架构
-    登录    ${组织机构}
-    进入iframe
+    [Setup]    登录    ${组织机构}
     编辑组织架构
     [Teardown]    关闭浏览器
 
-搜索组织架构
-    登录    ${组织机构}
-    进入iframe
-    搜索组织架构
+删除部门
+    [Setup]    登录    ${组织机构}
+    删除部门
     [Teardown]    关闭浏览器
-
-删除组织架构
-    登录    ${组织机构}
-    进入iframe
-    删除组织架构
+	
+删除分公司
+    [Setup]    登录    ${组织机构}
+    删除分公司
     [Teardown]    关闭浏览器

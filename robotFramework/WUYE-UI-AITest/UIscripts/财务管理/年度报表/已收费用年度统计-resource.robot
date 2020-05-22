@@ -61,7 +61,5 @@ Variables         ../../../config/elements/财务管理/年度报表Xpath.py
     click element    ${已收费用年度统计_一个列表金额}
     sleep    0.5
     等待element元素可见    ${已收费用年度统计_跳转页面title验证}
-    # page_title接收跳转页面面包屑文本
-    ${page_title}    获取元素文本    ${已收费用年度统计_跳转页面title验证}
-    sleep    3
-    断言值包含    已收费用月统计    ${page_title}
+    sleep    2
+    断言值包含    ${已收费用年度统计_跳转页面title验证}		已收费用月统计

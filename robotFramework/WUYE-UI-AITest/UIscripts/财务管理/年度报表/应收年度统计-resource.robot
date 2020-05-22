@@ -43,7 +43,7 @@ Variables         ../../../config/elements/财务管理/年度报表Xpath.py
 
 应收年度统计_导出统计数据
     等待元素可用    ${应收年度统计_导出按钮}
-    sleep    0.5
+    sleep    1
     click button    ${应收年度统计_导出按钮}
     sleep    3
 
@@ -59,8 +59,7 @@ Variables         ../../../config/elements/财务管理/年度报表Xpath.py
     等待element元素可见    ${应收年度统计_一个列表金额}
     sleep    0.5
     click element    ${应收年度统计_一个列表金额}
-    sleep    3
+    sleep    1
     等待element元素可见    ${应收年度统计_跳转页面title验证}
-    # page_title接收跳转页面面包屑文本
-    ${page_title}    获取元素文本    ${应收年度统计_跳转页面title验证}
-    断言值包含    应收月度统计    ${page_title}
+    sleep    1
+    断言值包含    ${应收年度统计_跳转页面title验证}		应收月度统计

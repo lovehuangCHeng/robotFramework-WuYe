@@ -29,12 +29,6 @@ Resource          数据备份-resource.robot
     删除备份
     [Teardown]    关闭浏览器
 
-批量删除备份
-    登录    ${数据备份}
-    进入iframe
-    批量删除备份
-    [Teardown]    关闭浏览器
-
 简单搜索备份
     登录    ${数据备份}
     进入iframe
