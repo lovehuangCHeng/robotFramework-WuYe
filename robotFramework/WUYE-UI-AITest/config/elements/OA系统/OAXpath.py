@@ -155,7 +155,7 @@ class MyObject:
 暂停工作计划="//ul[@role='listbox']/li[last()]"
 更多审核工作="//ul[@class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']/li[3]"
 更多撤销审核工作="//ul[@class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']/li[4]"
-二次确认审核="//div[3]//button[@class='ant-btn ant-btn-primary ant-btn-sm']"
+二次确认审核="//div[@class='ant-popover-buttons']/button[2]"
 二次确认撤销="//div[5]//button[@class='ant-btn ant-btn-primary ant-btn-sm']"
 工作计划管理搜索框="//input[@class='ant-input ant-input-lg']"
 

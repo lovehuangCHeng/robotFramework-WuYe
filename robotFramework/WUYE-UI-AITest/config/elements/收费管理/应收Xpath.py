@@ -20,6 +20,7 @@ class MyObject:
 选择冻结账单="//select[@id='BillStatus']/option[4]"
 单击搜索操作="//button[@id='btnFilterDetail']"
 ##操作
+导出="//div[@id='exportMenu']/button"
 导出excel="//button[@id='btnExport']"
 导出明细excel="//button[@id='btnExportDetail']"
 删除账单="//button[@id='btnDeleteBill']"
@@ -31,9 +32,12 @@ class MyObject:
 关闭撤销删除页面="//button[@id='btnDeleteBillCancel']"
 确认撤销账单="//div[@class='modal-dialog']//button[@class='btn btn-primary']"
 已出二次确认="//a[@class='btn btn-sm btn-danger']"
+冻结账单下拉="//div[@class='col-md-8 col-sm-12 col-xs-12 toolbar']/div[2]/button"
 冻结账单="//button[@id='btnFrozenBill']"
 解冻账单="//button[@id='btnUnFrozenBill']"
 标记为开票="//button[@id='markBillInvoiced']"
+修改费用承担人="//button[@id='btnUpdateOwner']"
+设置欠费原因="//button[@id='btnSetArrearReasonType']"
 
 #固定金额分摊
 新建固定金额="//button[@id='btnAdd']"

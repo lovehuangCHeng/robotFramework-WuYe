@@ -56,12 +56,13 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     click element    //li[@id='${var[0][0]}']/a
     sleep    0.5
     click button    ${欠费月度统计_搜索按钮}
+	sleep    1
     等待element元素可见    ${欠费月度统计_所有管理区展开}
     sleep    2
     click element    ${欠费月度统计_所有管理区展开}
-    sleep    0.5
+    sleep    2
     click element    ${欠费月度统计_所有欠费金额}
-    sleep    3
+    sleep    1
 
 欠费月度统计_汇总到楼宇
     数据库查询操作    ${guanliquID}
@@ -73,7 +74,10 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     sleep    0.5
     click element    ${欠费月度统计_汇总到楼宇勾选框}
     sleep    0.5
+    等待element元素可见    ${欠费月度统计_搜索按钮}
+	sleep    1
     click button    ${欠费月度统计_搜索按钮}
+	sleep    1
 
 欠费月度统计_汇总到楼宇导出
     数据库查询操作    ${guanliquID}
@@ -102,6 +106,8 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     sleep    0.5
     click element    ${欠费月度统计_汇总到收费项目勾选框}
     sleep    0.5
+	等待element元素可见    ${欠费月度统计_搜索按钮}
+	sleep    1
     click button    ${欠费月度统计_搜索按钮}
 
 欠费月度统计_汇总到收费项目导出
@@ -146,13 +152,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     click button    ${欠费月度统计_客户资源汇总导出按钮}
 
 欠费月度统计_客户资源汇总查看资源详情
-    数据库查询操作    ${GLQLYID}
-    sleep    0.5
-    等待element元素可见    //li[@id='${var[0][0]}']/a
-    sleep    0.5
-    #选中管理区
-    click element    //li[@id='${var[0][0]}']/a
-    sleep    0.5
+	选择资源树上的楼宇
     click element    ${欠费月度统计_客户资源汇总Tab}
     sleep    3
     等待element元素可见    ${欠费月度统计_客户资源汇总查看房间信息}
@@ -217,13 +217,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     click button    ${欠费月度统计_导出欠费汇总按钮}
 
 欠费月度统计_客户资源明细查看资源详情
-    数据库查询操作    ${GLQLYID}
-    sleep    0.5
-    等待element元素可见    //li[@id='${var[0][0]}']/a
-    sleep    0.5
-    #选中管理区
-    click element    //li[@id='${var[0][0]}']/a
-    sleep    0.5
+    选择资源树上的楼宇
     click element    ${欠费月度统计_客户资源明细Tab}
     sleep    3
     等待element元素可见    ${欠费月度统计_客户资源明细查看房间信息}
@@ -261,3 +255,19 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     等待元素可用    ${欠费月度统计_清单明细导出按钮}
     sleep    0.5
     click button    ${欠费月度统计_清单明细导出按钮}
+
+选择资源树上的楼宇
+	数据库查询操作    ${guanliquID}
+    sleep    0.5
+    等待element元素可见    //li[@id='${var[0][0]}']/i
+    sleep    0.5
+    #选中管理区
+    click element    //li[@id='${var[0][0]}']/i
+    sleep    0.5
+    数据库查询操作    ${GLQLYID}
+    sleep    0.5
+    等待element元素可见    //li[@id='${var[0][0]}']/a
+    sleep    0.5
+    #选中管理区
+    click element    //li[@id='${var[0][0]}']/a
+    sleep    0.5

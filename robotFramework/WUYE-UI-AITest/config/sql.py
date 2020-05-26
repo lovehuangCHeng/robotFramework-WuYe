@@ -10,6 +10,10 @@ sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_xinye_05
 '''	
 
 '''
+查询第一个管理区的分公司名称
+'''
+fenGongSiName="select Name from OrganizationItem where Id=(select top 1 ParentId from OrganizationItem where Discriminator ='管理区' );"
+'''
 查询管理区数据
 '''
 guanliqu="select top 1 Name from OrganizationItem where Discriminator='管理区';"

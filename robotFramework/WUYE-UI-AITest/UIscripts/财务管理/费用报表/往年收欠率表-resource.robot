@@ -9,7 +9,7 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click element    ${往年收欠率表_截止日期}
     sleep    0.5
-	click element    ${往年收欠率表_选择开始日期}
+    click element    ${往年收欠率表_选择开始日期}
     sleep    0.5
     click element    ${往年收欠率表_选择截止日期}
     sleep    0.5
@@ -47,9 +47,16 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     click button    ${往年收欠率表_导出}
     sleep    2
-	
+
 搜索输入中的管理区
-	数据库查询操作    ${guanliqu}
+    数据库查询操作    ${fenGongSiName}
+    sleep    0.5
+    等待element元素可见    //span[text()='${var[0][0]}']/../../span[1]
+    sleep    0.5
+    #选中分公司
+    click element    //span[text()='${var[0][0]}']/../../span[1]
+    sleep    0.5
+    数据库查询操作    ${guanliqu}
     sleep    0.5
     等待element元素可见    //span[text()='${var[0][0]}']
     sleep    0.5
@@ -57,4 +64,11 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     click element    //span[text()='${var[0][0]}']
     sleep    0.5
 
-
+查询分公司是否存在
+    [Arguments]    ${var}
+    等待element元素可见    //span[text()='${var}']/../../span[1]
+    sleep    0.5
+    #选中分公司
+    click element    //span[text()='${var}']/../../span[1]
+    sleep    0.5
+    [Teardown]

@@ -65,7 +65,14 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
 	
 搜索输入中的管理区
-	数据库查询操作    ${guanliqu}
+    数据库查询操作    ${fenGongSiName}
+    sleep    0.5
+    等待element元素可见    //span[text()='${var[0][0]}']/../../span[1]
+    sleep    0.5
+    #选中分公司
+    click element    //span[text()='${var[0][0]}']/../../span[1]
+    sleep    0.5
+    数据库查询操作    ${guanliqu}
     sleep    0.5
     等待element元素可见    //span[text()='${var[0][0]}']
     sleep    0.5

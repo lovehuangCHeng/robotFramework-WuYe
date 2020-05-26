@@ -350,8 +350,9 @@ Resource          ../../通用方法.robot
 房间删除
     [Arguments]    ${name}
     房间搜索    ${name}
-    等待元素可用	${房间删除}
 	sleep    1
+    等待元素可用	${房间删除}
+	sleep    2
     Click Element    ${房间删除}
     sleep    1
     Click Element    ${确认删除}

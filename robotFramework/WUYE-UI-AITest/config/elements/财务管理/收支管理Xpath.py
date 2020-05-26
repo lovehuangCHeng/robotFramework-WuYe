@@ -33,7 +33,7 @@ class MyObject:
 ##########收入登记##########
 收入登记新建按钮="//span/button[@class='ant-btn ant-btn-primary']"
 新建收入登记管理区下拉框="//div[@id='regionId']"
-新建收入登记选择管理区="//body/div[3]//ul/li[1]"
+新建收入登记选择管理区="//ul[@role='listbox']/li[1]"
 新建收入登记科目名称下拉框="//div[@id='accountId']"
 新建收入登记选择科目名称="//body/div[4]//ul/li[1]"
 新建收入登记金额="//input[@id='amount']"

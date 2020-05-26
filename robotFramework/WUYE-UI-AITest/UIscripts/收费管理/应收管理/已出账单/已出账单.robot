@@ -56,20 +56,17 @@ Resource          查询判断.robot
 冻结账单
     登录    ${已出账单}
     进入iframe
-    查询并判断未缴费的已出账单    冻结账单
-    sleep    2
+    冻结账单
     [Teardown]    关闭浏览器
 
 解冻账单
     登录    ${已出账单}
     进入iframe
     解冻账单
-    sleep    2
     [Teardown]    关闭浏览器
 
 标记开票
     登录    ${已出账单}
     进入iframe
-    sleep    2
     标记开票
     [Teardown]    关闭浏览器

@@ -7,7 +7,9 @@ Library           string
 *** Keywords ***
 高级搜索（已出）
     [Arguments]    ${SD}    ${CD}    ${NAME}
-    Click button    ${高级搜索下拉框}
+    等待element元素可见    ${高级搜索下拉框}
+    sleep    1
+    Click Element    ${高级搜索下拉框}
     sleep    2
     input text    ${应收日期}    ${SD}
     sleep    2
@@ -24,33 +26,39 @@ Library           string
     click button    ${单击搜索操作}
 
 导出excel
-    sleep    2
-    Click button    ${导出excel}
+    等待element元素可见    ${导出}
+    sleep    1
+    Mouse Up    ${导出}
+    sleep    1
+    Click Element    ${导出excel}
     sleep    1
 
 导出明细excel
-    sleep    2
-    Click button    ${导出明细excel}
+    等待element元素可见    ${导出}
+    sleep    1
+    Mouse Up    ${导出}
+    sleep    1
+    Click Element    ${导出明细excel}
     sleep    1
 
 删除没有收费的账单
     等待element元素可见    ${搜索结果}
-    sleep    3
+    sleep    1
     Click Element    ${勾选外层账单}
     sleep    1
-    Click button    ${删除账单}
+    Click Element    ${删除账单}
     sleep    2
     Click element    ${已出二次确认}
     等待element元素可见    ${关闭撤销删除页面}
-    sleep    2
-    Click button    ${关闭撤销删除页面}
+    sleep    1
+    Click Element    ${关闭撤销删除页面}
 
 删除账单并撤销收费(回收票据)
     等待element元素可见    ${搜索结果}
-    sleep    3
+    sleep    1
     Click Element    ${勾选外层账单}
     sleep    1
-    Click button    ${删除账单}
+    Click Element    ${删除账单}
     sleep    2
     Click element    ${已出二次确认}
     sleep    2
@@ -58,48 +66,63 @@ Library           string
     sleep    2
     Click Element    ${勾选账单}
     sleep    1
-    Click button    ${撤销并删除账单}
+    Click Element    ${撤销并删除账单}
     等待button元素可见    ${确认撤销账单}
     sleep    2
-    Click button    ${确认撤销账单}
+    Click Element    ${确认撤销账单}
 
 删除账单并撤销收费(不回收票据)
     等待element元素可见    ${搜索结果}
-    sleep    3
+    sleep    1
     Click Element    ${勾选外层账单}
-    sleep    3
-    Click button    ${删除账单}
-    sleep    3
+    sleep    1
+    Click Element    ${删除账单}
+    sleep    1
     Click element    ${已出二次确认}
-    sleep    3
+    sleep    2
     Click Element    ${勾选账单}
-    sleep    3
-    Click button    ${撤销并删除账单}
+    sleep    2
+    Click Element    ${撤销并删除账单}
     等待button元素可见    ${确认撤销账单}
-    sleep    3
-    Click button    ${确认撤销账单}
+    sleep    1
+    Click Element    ${确认撤销账单}
 
 删除已扎帐的账单
     等待element元素可见    ${搜索结果}
-    sleep    3
+    sleep    1
     Click Element    ${勾选外层账单}
     sleep    1
-    Click button    ${删除账单}
+    Click Element    ${删除账单}
     sleep    2
     Click element    ${已出二次确认}
     sleep    2
-    Click button    ${关闭撤销删除页面}
+    Click Element    ${关闭撤销删除页面}
 
 冻结账单
-    sleep    5
+    等待element元素可见    ${高级搜索下拉框}
+    sleep    1
+    Click Element    ${高级搜索下拉框}
+    sleep    2
+    Click Element    ${账单状态 }
+    sleep    2
+    等待element元素可见    ${选择已出账单 }
+    click element    ${选择已出账单 }
+    sleep    1
+    click button    ${单击搜索操作}
+    sleep    2
     Click Element    ${勾选外层账单}
     sleep    2
-    Click button    ${冻结账单}
+	Mouse Up    ${冻结账单下拉}
+    sleep    1
+    Click Element    ${冻结账单}
     sleep    2
     Click element    ${已出二次确认}
-
+	sleep    1
+	
 解冻账单
-    Click button    ${高级搜索下拉框}
+	等待element元素可见    ${高级搜索下拉框}
+    sleep    1
+    Click Element    ${高级搜索下拉框}
     sleep    2
     Click Element    ${账单状态 }
     sleep    2
@@ -110,14 +133,19 @@ Library           string
     sleep    2
     Click Element    ${勾选外层账单}
     sleep    2
-    Click button    ${解冻账单}
+	等待element元素可见    ${冻结账单下拉}
+    sleep    1
+    Mouse Up    ${冻结账单下拉}
+    sleep    1
+    Click Element    ${解冻账单}
     sleep    2
     Click element    ${已出二次确认}
-
+	sleep    1
+	
 标记开票
     Click Element    ${勾选外层账单}
     sleep    1
-    Click button    ${标记为开票}
+    Click Element    ${标记为开票}
     sleep    2
     Click element    ${已出二次确认}
 

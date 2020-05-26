@@ -33,22 +33,6 @@ Variables         ../../../config/elements/财务管理/收支管理Xpath.py
     click element    ${收入登记编辑按钮}
     等待element元素可见    ${新建收入登记管理区下拉框}
     sleep    0.5
-    click element    ${新建收入登记管理区下拉框}
-    sleep    0.5
-    click element    ${新建收入登记选择管理区}
-    sleep    0.5
-    click element    ${新建收入登记科目名称下拉框}
-    sleep    0.5
-    click element    ${新建收入登记选择科目名称}
-    sleep    0.5
-    Input Text    ${新建收入登记金额}    3598.98
-    sleep    0.5
-    click element    ${新建收入登记发生日期选择框}
-    sleep    0.5
-    click element    ${新建收入登记发生日期选择今天}
-    sleep    0.5
-    Input Text    ${新建收入登记备注}    收入登记001
-    sleep    0.5
     click button    ${新建收入登记确定}
 
 简单搜索收入登记

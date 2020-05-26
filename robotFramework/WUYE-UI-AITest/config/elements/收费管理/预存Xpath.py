@@ -14,6 +14,7 @@
 确定充值成功="//div[@class='bootbox modal bootbox-alert in']//button[@class='btn btn-primary']"
 ##冲抵欠费
 预存款账户搜索="//input[@id='searchTerm']"
+选择账户账单="//tbody/tr[1]/td[1]/div/span"
 确认搜索="//button[@id='btnFilter']"
 选择账户="//div[@id='gridCustomerAccount']//td[text()='通用预存款'][1]"
 冲抵欠费按钮="//button[@id='btnPayBill']"

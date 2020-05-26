@@ -36,7 +36,7 @@ class MyObject:
 
 已收费用日报_按收费项目汇总_表格数据="//div[@id='gridDayPayments']/div/table/tbody/tr[1]/td[2]"
 已收费用日报_按收费项目汇总_导出="//button[@id='btnExportSummary']"
-已收费用日报_按收费项目汇总_显示收费标准="//div[@id='uniform-showChargeItem']"
+已收费用日报_按收费项目汇总_显示收费标准="//div[@id='uniform-showChargeItem']/span"
 
 已收费用日报_收费明细_资源详情="//div[@id='gridDayPaymentDetail']/div/table/tbody/tr[1]/td[1]/a"
 已收费用日报_收费明细_客户详情="//div[@id='gridDayPaymentDetail']/div/table/tbody/tr[1]/td[2]/a"

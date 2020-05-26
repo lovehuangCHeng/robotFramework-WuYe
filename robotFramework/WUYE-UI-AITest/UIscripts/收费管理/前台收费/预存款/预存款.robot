@@ -13,33 +13,28 @@ Library           BuiltIn
     登录    ${预存款}
     进入iframe
     预缴
-    sleep    3
     [Teardown]    关闭浏览器
 
 预存款退款
     登录    ${预存款}
     进入iframe
     预存款退款
-    sleep    3
     [Teardown]    关闭浏览器
 
 预存款冲抵
     登录    ${预存款}
     进入iframe
     预存款冲抵
-    sleep    3
     [Teardown]    关闭浏览器
 
 查看收支明细
     登录    ${预存款}
     进入iframe
     查看收支明细
-    sleep    3
     [Teardown]    关闭浏览器
 
 查看核销明细
     登录    ${预存款}
     进入iframe
     查看核销明细
-    sleep    3
     [Teardown]    关闭浏览器
