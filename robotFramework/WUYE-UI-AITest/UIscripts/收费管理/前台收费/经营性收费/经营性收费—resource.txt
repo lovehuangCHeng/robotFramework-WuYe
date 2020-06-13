@@ -84,6 +84,9 @@ Resource          ../../../通用方法.robot
     log    ${KHname}
     log    ${GDname}
 	
+更新固定金额数据
+	数据库更新数据	${UpdateGudJinE}
+	
 客户变量
     ${testdata}    Time Random    客户
     Set Suite Variable    ${testdata}

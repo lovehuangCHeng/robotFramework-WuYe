@@ -70,3 +70,4 @@ Variables         ../../../config/elements/财务管理/年度报表Xpath.py
     等待element元素可见    ${应收年度统计_跳转页面title验证}
     sleep    1
     断言值包含    ${应收年度统计_跳转页面title验证}		应收月度统计
+

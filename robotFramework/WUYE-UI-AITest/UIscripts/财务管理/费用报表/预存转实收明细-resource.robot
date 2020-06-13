@@ -39,9 +39,9 @@ Variables         ../../../config/elements/财务管理/费用报表Xpath.py
     sleep    0.5
     input text    ${预存转实收明细_核销时间开始日期}    2020-01-01
     sleep    0.5
-	click element    ${预存转实收明细_只显示本月费用}
+    click element    ${预存转实收明细_只显示本月费用}
     sleep    0.5
-    等待element元素可见    ${预存转实收明细_导出}
+    等待element元素可见    ${预存转实收明细_表格数据}
     sleep    0.5
-	click element    ${预存转实收明细_导出}
+    click element    ${预存转实收明细_导出}
     sleep    0.5

@@ -8,44 +8,49 @@ Library           Selenium2Library
     ${quyuID}    Get Current Date    result_format=%Y%d%M%S
     click button    ${绿化区域新建按钮}
     等待element元素可见    ${选择管理区下拉}
-    sleep    3
+    sleep    1
     click element    ${选择管理区下拉}
     等待element元素可见    ${选择第一个管理区}
-    sleep    3
+    sleep    1
     click element    ${选择第一个管理区}
-    sleep    3
+    sleep    1
     input text    ${区域代码输入框}    ${quyuID}
-    sleep    3
+    sleep    1
     input text    ${区域名称输入框}    ${quyuID}
-    sleep    3
+    sleep    1
     click element    ${责任人下拉}
     等待element元素可见    ${选择第一个责任人}
-    sleep    3
+    sleep    1
     click element    ${选择第一个责任人}
-    sleep    3
+    sleep    1
     click button    ${确认按钮}
     等待element元素可见    ${操作成功断言 }
-    sleep    3
+    sleep    1
     click element    ${查看按钮}
-    sleep    3
+    sleep    1
     click button    ${取消按钮}
-    sleep    3
+    sleep    1
     等待element元素可见    ${绿化区域新建按钮}
 
 编辑绿化区域
     等待element元素可见    ${编辑按钮}
-    sleep    3
+    sleep    1
     click element    ${编辑按钮}
     等待element元素可见    ${确认按钮}
-    sleep    3
+    sleep    1
     click button    ${确认按钮}
     等待element元素可见    ${操作成功断言}
 
 删除绿化区域
+    ${quyuID}    Get Current Date    result_format=%Y%d
     等待element元素可见    ${删除按钮}
-    sleep    3
+    input text    ${搜索框}    ${quyuID}
+    sleep    1
+    click element    ${搜索}
+    sleep    1
+    等待element元素可见    ${删除按钮}
     click element    ${删除按钮}
     等待element元素可见    ${二次确认}
-    sleep    3
+    sleep    1
     click button    ${二次确认}
     等待element元素可见    ${操作成功断言}

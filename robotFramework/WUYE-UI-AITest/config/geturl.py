@@ -1,5 +1,5 @@
 # Can be used in the test data like ${MyObject()} or ${MyObject(1)}
-basicURL='http://10.10.120.171:8082'
+basicURL='http://10.10.120.171:8081'
 loginURL='/Login'
 首页=basicURL+'/#/home'
 ##基础信息
@@ -62,7 +62,7 @@ loginURL='/Login'
 保洁区域=basicURL+'/#/cleaningManage/cleaningAreaList'
 保洁记录=basicURL+'/#/cleaningManage/cleaningRecordList'
 保洁检查=basicURL+'/#/cleaningManage/cleaningInspectList'
-保洁工具检查=basicURL+'/#/cleaningManage/cleaningToolList'
+保洁工具管理=basicURL+'/#/cleaningManage/cleaningToolList'
 #设备管理
 设备档案=basicURL+'/#/Nova.Pms.DeviceManagement/Device/Index'
 保养计划=basicURL+'/#/Nova.Pms.DeviceManagement/DeviceMaintenancePlan/Index'
@@ -92,6 +92,12 @@ loginURL='/Login'
 保洁巡查计划=basicURL+'/#/PropertyManage/PatrolManage/CleaningInspection/CleaningInspectionPlan'
 保洁巡查任务=basicURL+'/#/PropertyManage/PatrolManage/CleaningInspection/CleaningInspectionTask'
 保洁巡查问题列表=basicURL+'/#/PropertyManage/PatrolManage/CleaningInspection/CleaningInspectionProblem'
+#品质巡查
+品质巡查类别=basicURL+'/#/PropertyManage/QualityInspectionManage/Category'
+品质巡查事项=basicURL+'/#/PropertyManage/QualityInspectionManage/Option'
+品质巡查计划=basicURL+'/#/PropertyManage/QualityInspectionManage/Plan'
+品质巡查任务=basicURL+'/#/PropertyManage/QualityInspectionManage/Task'
+品质巡查问题=basicURL+'/#/PropertyManage/QualityInspectionManage/Problem'
 
 ##系统管理
 #系统设置
@@ -193,19 +199,25 @@ RFID设备=basicURL+'/#/RFIDManage/RFIDDevice'
 欠费月度统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/OwningMonthReport/Index'
 已收费用月统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/MonthPaymentHistoryReport/Index'
 收入月度分摊=basicURL+'/#/Nova.Pms.PropertyManagementSystem/ChargeMonthReport/Index'
+月度收费统计=basicURL+'/#/FinancialManage/ExpenseReports/MonthlyCharge'
+按月环比收费率欠费率=basicURL+'/#/FinancialManage/ExpenseReports/MonthPaymentCompareReport'
 #年报表
-应收年度统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/ReceivableYearReport/Index'	
+应收年度统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/ReceivableYearReport/Index'
 欠费年度统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/OwningYearReport/Index'
 已收费用年度统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/ChargeYearReport/Index'
 收费率年度统计=basicURL+'/#/Nova.Pms.PropertyManagementSystem/ChargeYearRateReport/Index'
+年度历史欠费=basicURL+'/#/FinanceManage/ExpenseReports/YearUnPaidHistoryReport'
+本年收费率欠费率=basicURL+'/#/FinancialManage/ExpenseReports/YearPaymentReport'
+收费目标完成率=basicURL+'/#/FinancialManage/ExpenseReports/CompletionChargingTargetRate'
 #费用减免统计
 费用减免明细=basicURL+'/#/Nova.Pms.PropertyManagementSystem/FeeDiscountReport/Index'
 费用减免汇总=basicURL+'/#/Nova.Pms.PropertyManagementSystem/FeeDiscountReport/Summary'
 #欠费报表
 欠费按时长分阶统计=basicURL+'/#/FinanceManage/OweReport/OweTimes'
 欠费按金额分阶统计=basicURL+'/#/FinanceManage/OweReport/OweAmount'
-
-
+欠费原因统计=basicURL+'/#/FinanceManage/OweReport/OweReason'
+#年度目标
+年度收费目标管理=basicURL+'/#/FinanceManage/FN_AnnualChargeTarget'
 ##租赁管理
 #租赁合同
 合同列表=basicURL+'/#/Nova.Pms.Contract/Contract/Index'

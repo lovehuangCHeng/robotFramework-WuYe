@@ -1,5 +1,6 @@
 import time
 import re
+from selenium import webdriver
 
 class MyString():
 	def __init__(self):
@@ -28,6 +29,10 @@ class MyString():
 			#cookie=cookie.split("=")[1]
 			print(cookie)
 			return cookie
+
+	def remove_readonly(self):
+		i=driver.find_element_by_xpath("//span[@id='planTime']/span/input")
+		driver.execute_script('arguments[0].removeAttribute(\"readonly\")', i);
 
 
 # if __name__=="__main__":

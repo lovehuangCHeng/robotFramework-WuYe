@@ -32,8 +32,6 @@ Resource          ../../../通用方法.robot
     sleep    1
 	click element    ${展开明细按钮}
     sleep    2
-	等待element元素可见    ${明细数据存在断言}
-    sleep    1
 	
 零头数据导出
 	等待element元素可见    ${导出Excel}
@@ -46,3 +44,8 @@ Resource          ../../../通用方法.robot
     ${AcCname}    set variable    ${var[0][0] }
     Set Suite Variable    ${AcCname}
     log    ${AcCname}
+
+插入零头数据
+	数据库更新数据	${CustomerAccoutLingTou}
+	
+	

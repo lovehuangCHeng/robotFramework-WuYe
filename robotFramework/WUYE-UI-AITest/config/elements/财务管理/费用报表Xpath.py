@@ -99,7 +99,8 @@ class MyObject:
 预存转实收明细_核销时间结束日期="//input[@id='PaymentEndDate']"
 预存转实收明细_只显示本月费用="//input[@id='IsShowThisMonthOnly']/.."
 预存转实收明细_表格="//div[@id='gridAdvancePayDetail']"
-预存转实收明细_导出="//button[@id='btnExportCustomerSummary']"
+预存转实收明细_表格数据="//div[@id='gridAdvancePayDetail']/div[2]//tbody/tr[1]/td[@role='gridcell'][1]"
+预存转实收明细_导出="//button[@class='btn btn-primary']"
 ##########应收实收预存一览##########
 应收实收预存一览_收费项目="//span[@id='select2-chargeItemType-container']/parent::span"
 应收实收预存一览_选择收费项目="//ul[@id='select2-chargeItemType-results']/li[1]"

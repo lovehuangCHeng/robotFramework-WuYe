@@ -1,5 +1,5 @@
 *** Settings ***
-Library           Selenium2Library    timeout=20
+Library           Selenium2Library    
 Variables         ../../../config/geturl.py
 Resource          ../../通用方法.robot
 Resource          销售单管理-resource.robot

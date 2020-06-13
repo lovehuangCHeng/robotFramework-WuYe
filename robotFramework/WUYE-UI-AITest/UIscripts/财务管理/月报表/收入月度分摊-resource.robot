@@ -53,7 +53,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     ${txtele}    返回有数据的链接
     sleep    0.5
     click element    ${txtele}
-    sleep    0.5
+    sleep    1
     等待元素可用    ${收入月度分摊_导出明细按钮}
     sleep    0.5
     click button    ${收入月度分摊_导出明细按钮}
@@ -71,7 +71,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     ${txtele}    返回有数据的链接
     sleep    0.5
     click element    ${txtele}
-    sleep    3
+    sleep    1
 
 收入月度分摊_查看资源详情
     数据库查询操作    ${guanliquID}
@@ -86,7 +86,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     ${txtele}    返回有数据的链接
     sleep    0.5
     click element    ${txtele}
-    sleep    3
+    sleep    1
     click element    ${收入月度分摊_查看资源代码详情}
     sleep    2
     断言存在    ${收入月度分摊_资源详情页面}
@@ -115,6 +115,7 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     : FOR    ${i}    IN RANGE    2    7
     \    ${ele}    Set Variable    //tbody/tr[1]/td[${i}]
     \    ${value}    get text    ${ele}
+    \    ${element}    Catenate    SEPARATOR=    ${ele}    /a
     \    log    ${value}
     \    Run Keyword If    ${value}!=0    Exit For Loop
-    [Return]    ${ele}
+    [Return]    ${element}

@@ -84,6 +84,12 @@ GetCurentShouldChargBill="SELECT RegionId FROM BILL WHERE ShouldChargeDate <= CO
 #查询零头账户客户名称（余额大于0）
 GetAccountInt1Cname="SELECT NAME from Customer c,CustomerAccount ca WHERE ca.InternalType=1	AND ca.Balance>0 AND c.Id=ca.CustomerId AND c.Name is not NULL"
 '''
+更新固定金额，金额四舍五入后为0的情况
+'''
+UpdateGudJinE="UPDATE dbo.ChargeItem set FixedAmount=100 where id in (select id from dbo.ChargeItem where  FixedAmount is not null)"
+
+
+'''
 不同状态的账单收费历史查询，获取应收、收费、房间、客户、票据号。
 '''
 ##---------有收费的账单:pt.status 0.1.2.3分别对应票据状态: 未打印,已打印,已退款,已作废   p.status 0.1.2分别对应账单状态.正常，已撤销，已扎帐---------
@@ -102,7 +108,10 @@ DSname   展厅名称，查询没有同名客户的数据
 DScode="select top 1 code from OrganizationItem   where ItemType =5"
 DSname="select top 1 Name  from Customer GROUP BY Name  HAVING COUNT(Name)<2"
 
-
+'''
+插入零头账户数据
+'''
+CustomerAccoutLingTou="INSERT into dbo.CustomerAccount values((select top 1 id from customer),0.5,0,null,(select top 1  id from FN_Account f where f.parentId=1 ),1)"
 
 '''
 查询模块是否开启

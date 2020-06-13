@@ -90,3 +90,72 @@ class MyObject:
 收入月度分摊_查看客户详情="//*[@id='gridChargeMonthDetail']/div[2]/table/tbody/tr[1]/td[3]/a"
 收入月度分摊_资源详情页面="//h2"
 收入月度分摊_客户详情页面客户名称="//div[@class='ant-drawer-body']/div[1]/div[1]/div[1]//div[@class='ant-card-body']/div[1]/div[1]/span[2]"
+'''
+新增报表通用
+'''
+#通用按钮
+搜索按钮="//span[text()='搜 索']/.."
+查询按钮="//span[text()='查 询']/.."
+重置按钮="//span[text()='重 置']/.."
+导出按钮="//span[text()='导出EXCEL']/.."
+#通用管理区定位
+管理区下拉="//span[text()='请选择管理区']/.."
+div管理区下拉="//div[text()='请选择管理区']/.."
+勾选第一个管理区="//li[@class='ant-select-tree-treenode-switcher-close'][1]//span[@class='ant-select-tree-checkbox-inner']"
+点击第一个管理区="//ul[@role='listbox']/li[1]"
+#通用搜索条件定位
+收费项目下拉="//div[text()='请选择收费项目']"
+选择对应的收费项目="//li[text()='租金']"
+应收月份日期拉下="//span[@id='month']"
+选择开始日期="//input[@placeholder='开始月份']/../../..//tr[1]/td[1]"
+选择结束日期="//input[@placeholder='开始月份']/../../..//tr[5]/td[1]"
+年份选择下拉="//span[@id='targetYear']"
+选择当前年="//td[@class='ant-calendar-year-panel-cell ant-calendar-year-panel-selected-cell']/a"
+#通用高级搜索条件定位
+高级搜索展开="//a[@class='seniorSearchBtn']"
+显示收费标准="//span[text()='显示收费标准']/..//span/input"
+展示收费标准="//span[text()='展示收费标准']/..//span/input"
+按收费标准汇总="//span[text()='按收费标准汇总']/..//span/input"
+按月汇总="//span[text()='按月汇总']/..//span/input"
+不为零的合计列数据="//td[text()='合计']/../td[*!=0][1]//a"
+收费标准断言="//span[text()='收费标准']"
+应收月份断言="//span[text()='应收月份']"
+##########月度收费统计##########
+月份下拉="//span[@id='month']/div/input[@class='ant-calendar-picker-input ant-input']"
+数据断言="//td[text()='租金']"
+span数据断言="//span[text()='租金']"
+断言打开明细="//span[@class='title___RImDz']"
+##########按月环比收费##########
+按月环比明细数据入口="//span[text()='实际应收']/../../../../../..//tr[1]//td[*!=0][1]/a"
+按月环比明细断言="//span[@class='title___RImDz']"
+##########年度历史收费###########
+##########本年收费率欠费率##########
+截止日期="//span[@id='filterChargeDateEnd']"
+本年收欠率截止日期="//input[@placeholder='请选择截止日期']/../../..//tr[1]/td[1]"
+本年收欠率截报表选择收费项目="//tr[1]//td//a[1]"
+本年收费欠费率明细数据断言="//span[text()='收欠费明细']"
+本年收费欠费率明细搜索="//input[@placeholder='楼宇/车库/资源代码/房间状态/费用承担人']/../span"
+##########收费目标完成率###########
+截止日期当前日期="//td[@class='ant-calendar-cell ant-calendar-today ant-calendar-selected-date ant-calendar-selected-day']/div[@class='ant-calendar-date']"
+##########欠费原因统计##########
+欠费原因截止日期="//span[@id='paidDate']"
+欠费原因截止日期选择="//input[@placeholder='请选择日期']/../../..//tr[2]/td[1]"
+欠费原因应收日期="//span[@id='date']"
+欠费原因选择应收开始日期="//input[@placeholder='开始日期']/../../..//tr[1]/td[1]"
+欠费原因选择应收结束日期="//input[@placeholder='开始日期']/../../..//tr[5]/td[1]"
+欠费原因明细断言="//span[@class='title___RImDz']"
+###########年度收费目标管理##########
+新建按钮="//span[text()='新 建']/.."
+编辑按钮="//tr[1]//a[text()='编辑']"
+删除按钮="//tr[1]//a[text()='删除']"
+新建页面选择年份="//input[@placeholder='请输入收本年目标金额']/../../../../../../../../..//span[@id='targetYear']"
+新建页面管理区下拉="//input[@placeholder='请输入收本年目标金额']/../../../../../../../../..//div[text()='请选择管理区']"
+新建页面收费项目下拉="//input[@placeholder='请输入收本年目标金额']/../../../../../../../../..//div[text()='请选择收费项目']"
+收本年目标金额="//input[@placeholder='请输入收本年目标金额']"
+收历欠目标金额="//input[@placeholder='请输入收历欠目标金额']"
+保存按钮="//span[text()='保 存']/.."
+二次确定="//div[text()='确认要删除该目标吗？']/../..//span[text()='确 定']/.."
+删除成功断言="//span[text()='删除成功']"
+勾选管理区数据库定位="//span[@title='${var[0][0]}']/../span[2]"
+点击管理区数据库定位="//li[text()='${var[0][0]}']"
+

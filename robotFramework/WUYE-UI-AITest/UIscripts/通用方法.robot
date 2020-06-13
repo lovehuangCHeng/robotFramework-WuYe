@@ -39,6 +39,13 @@ Library           Mylibrary
     Disconnect From Database
     [Return]    ${var}
 
+数据库更新数据
+    [Arguments]    ${sqlselect}
+    Connect To Database Using Custom Params    pyodbc    ${sqlconfig}
+    Execute Sql String    ${sqlselect}
+    Disconnect From Database
+
+
 二次确认
     sleep    2
     click element    //button[@class='ant-btn ant-btn-primary ant-btn-sm']
@@ -159,7 +166,7 @@ Library           Mylibrary
 表单单元格数据不为0的元素查找
     [Arguments]    ${num1}    ${num2}
     : FOR    ${i}    IN RANGE    ${num1}    ${num2}
-    \    ${ele}    Set Variable    //tbody/tr[1]/td[${i}]
+    \    ${ele}    Set Variable    //tbody/tr[1]/td[${i}]/a
     \    ${value}    get text    ${ele}
     \    log    ${value}
     \    Run Keyword If    ${value}!=0    Exit For Loop

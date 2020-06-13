@@ -38,7 +38,7 @@ class MyObject:
 公告批量删除按钮="//div[@class='ant-popover ant-popover-placement-topRight']//button[@class='ant-btn ant-btn-primary ant-btn-sm']"
 
 #待办事项
-新建待办事项按钮="//div/button"
+新建待办事项按钮="//button/span[text()='新 建']/.."
 待办事项主题输入框="//span/input[@id='subject']"
 待办事项内容编辑器="//div[@class='w-e-text']"
 结束时间="//span[@id='finshedDate']//input"
@@ -57,7 +57,7 @@ class MyObject:
 待办事项删除二次确认="//div[@class='ant-popover ant-popover-placement-topRight']//button[@class='ant-btn ant-btn-primary ant-btn-sm']"
 
 #文档类别管理
-新建文档类别按钮="//div[1]/a/button"
+新建文档类别按钮="//button/span[text()='新 建']/.."
 文档类别名称="//div//input[@id='name']"
 文档类别备注="//div//input[@id='remark']"
 文档类别保存按钮="//span/button[@class='ant-btn ant-btn-primary']"
@@ -68,7 +68,7 @@ class MyObject:
 文档类别搜索框="//input[@class='ant-input ant-input-lg']"
 
 #会议类别管理
-新建会议类别按钮="//div[1]/a/button"
+新建会议类别按钮="//button/span[text()='新 建']/.."
 会议类别名称="//div//input[@id='name']"
 会议类别备注="//div//input[@id='remark']"
 会议类别保存按钮="//span/button[@class='ant-btn ant-btn-primary']"
@@ -79,7 +79,7 @@ class MyObject:
 会议类别搜索框="//input[@class='ant-input ant-input-lg']"
 
 #计划类别管理
-新建计划类别按钮="//div[1]/a/button"
+新建计划类别按钮="//button/span[text()='新 建']/.."
 计划类别名称="//div//input[@id='name']"
 计划类别备注="//div//input[@id='remark']"
 计划类别保存按钮="//span/button[@class='ant-btn ant-btn-primary']"
@@ -90,13 +90,13 @@ class MyObject:
 计划类别搜索框="//input[@class='ant-input ant-input-lg']"
 
 #文档资料管理
-新建文档资料按钮="//div[1]/a/button"
+新建文档资料按钮="//button/span[text()='新 建']/.."
 文档资料管理区下拉框="//div[@id='regionId']//div[@class='ant-select-selection__placeholder']"
 文档资料选择管理区="//ul[@role='listbox']/li[last()]"
 文档编号="//input[@id='number']"
 文档名称="//input[@id='name']"
 文档类型下拉框="//div[@id='documentCategoryId']//div[@class='ant-select-selection__placeholder']"
-文档类别选择类别="//div[3]//ul[@role='listbox']/li[1]"
+文档类别选择类别="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][2]//ul[@role='listbox']/li[1]"
 文档版本="//input[@id='version']"
 文档资料保存按钮="//span/button[@class='ant-btn ant-btn-primary']"
 文档资料取消按钮="//button[@class='ant-btn ant-btn-default']"
@@ -114,13 +114,13 @@ class MyObject:
 文档资料管理搜索框="//input[@class='ant-input ant-input-lg']"
 
 #会议记录
-新建会议记录="//div[1]/a/button"
+新建会议记录="//button/span[text()='新 建']/.."
 会议记录管理区选择下拉框="//div[@id='regionId']//div[@class='ant-select-selection__placeholder']"
-会议记录选择管理区="//div[2]//ul[@role='listbox']/li[last()]"
+会议记录选择管理区="//ul[@role='listbox']/li[last()]"
 会议记录序号="//input[@id='number']"
 会议名称="//input[@id='name']"
 会议类别下拉框="//div[@id='officeManagementCategoryId']//div[@class='ant-select-selection__placeholder']"
-选择会议类别="//div[3]//ul[@role='listbox']/li[last()]"
+选择会议类别="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][2]//ul[@role='listbox']/li[1]"
 会议记录保存按钮="//button[@class='ant-btn ant-btn-primary']"
 会议记录取消按钮="//button[@class='ant-btn ant-btn-default']"
 编辑会议记录="//div[@class='ant-table-fixed-right']//tbody/tr[1]/td/span/a[text()='编辑']"
@@ -131,13 +131,13 @@ class MyObject:
 查看会议记录返回="//button[@class='ant-btn ant-btn-default']"
 
 #工作计划
-新建工作计划按钮="//div[1]/a/button"
+新建工作计划按钮="//button/span[text()='新 建']/.."
 工作计划管理区下拉框="//div[@id='regionId']//div[@class='ant-select-selection__placeholder']"
 工作计划选择管理区="//ul[@role='listbox']/li[last()]"
 工作计划序号="//input[@id='number']"
 工作计划名称="//input[@id='name']"
 工作计划下拉框="//div[@id='officeManagementCategoryId']//div[@class='ant-select-selection__placeholder']"
-工作计划选择类别="//div[3]//ul[@role='listbox']/li[1]"
+工作计划选择类别="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][2]//ul[@role='listbox']/li[1]"
 工作计划开始时间="//span[@id='startDate']//input"
 选择开始时间="//div[@class='ant-calendar-body']//tr[3]/td[3]/div"
 工作计划结束时间="//span[@id='endDate']//input"

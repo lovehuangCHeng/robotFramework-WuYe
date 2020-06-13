@@ -22,7 +22,7 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    1
     Click Element    ${客户档案保存}
     sleep    1
-	断言值包含    ${合并重名客户}	合并重名客户
+	等待element元素可见    ${合并重名客户}
 	sleep    1
 
 查询客户数据
@@ -50,6 +50,7 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    1
     Click Element    ${高级搜索按钮}
     sleep    1
+	等待element元素可见    ${客户名称断言}
 	断言值包含    ${客户名称断言}	逐日者
 	sleep    1
 
@@ -64,7 +65,7 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    1
     Click Element    ${客户档案保存}
     sleep    1
-	断言值包含    ${客户档案断言}	保存成功
+	等待element元素可见    ${客户档案断言}	
 	sleep    1
 
 合并重名客户
@@ -76,7 +77,7 @@ Variables         ../../../config/elements/基础信息/客户管理.py
 	sleep    1
     Click Element    ${关闭合并同名客户}
     sleep    1
-	断言值包含    ${合并重名客户}	合并重名客户
+	等待element元素可见    ${合并重名客户}
 	sleep    1
 
 删除新建客户
@@ -91,6 +92,7 @@ Variables         ../../../config/elements/基础信息/客户管理.py
     sleep    1
     Click Element    ${确认删除按钮}
     sleep    1
+	等待element元素可见	${删除成功}
 	断言值包含    ${删除成功}	删除成功
 	sleep    1
 

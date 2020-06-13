@@ -15,10 +15,6 @@ Variables         ../../../config/elements/财务管理/年度报表Xpath.py
 已收费用年度统计_汇总到楼宇
     等待element元素可见    ${已收费用年度统计_已收费用时间段选择框}
     sleep    0.5
-    click element    ${已收费用年度统计_已收费用时间段选择框}
-    sleep    0.5
-    click element    ${已收费用年度统计_已收费用时间段选择上个月}
-    sleep    0.5
     click element    ${已收费用年度统计_汇总到楼宇勾选框}
     sleep    0.5
 	等待element元素可见    ${已收费用年度统计_所有管理区展开}
@@ -29,10 +25,6 @@ Variables         ../../../config/elements/财务管理/年度报表Xpath.py
 
 已收费用年度统计_汇总到收费项目
     等待element元素可见    ${已收费用年度统计_已收费用时间段选择框}
-    sleep    0.5
-    click element    ${已收费用年度统计_已收费用时间段选择框}
-    sleep    0.5
-    click element    ${已收费用年度统计_已收费用时间段选择上个月}
     sleep    0.5
     click element    ${已收费用年度统计_汇总到收费项目勾选框}
     sleep    0.5

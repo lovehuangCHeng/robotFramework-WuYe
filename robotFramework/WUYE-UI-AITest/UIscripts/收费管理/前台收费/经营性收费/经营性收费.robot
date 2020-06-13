@@ -7,6 +7,7 @@ Library           BuiltIn
 
 *** Test Cases ***
 数据查询
+	更新固定金额数据
     数据查询
 
 经营性收费
