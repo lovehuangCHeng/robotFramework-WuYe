@@ -1,0 +1,61 @@
+*** Settings ***
+Resource          合同列表及收费-source.robot
+
+*** Test Cases ***
+新建合同
+    登录    ${合同列表}
+    sleep    20
+    进入iframe
+    sleep    3
+    新建合同
+    [Teardown]    关闭浏览器
+
+变更合同
+    登录    ${合同列表}
+    sleep    3
+    进入iframe
+    高级搜索    ${Cname}    ${Cname}
+    sleep    3
+    合同变更
+    [Teardown]    关闭浏览器
+
+审核合同
+    登录    ${合同列表}
+    sleep    3
+    进入iframe
+    高级搜索    ${Cname}    ${Cname}
+    sleep    3
+    合同审核
+    [Teardown]    关闭浏览器
+
+续签合同
+    登录    ${合同列表}
+    sleep    3
+    进入iframe
+    高级搜索    ${Cname}    ${Cname}
+    sleep    3
+    续签合同
+    [Teardown]    关闭浏览器
+
+删除合同
+    登录    ${合同列表}
+    sleep    3
+    进入iframe
+    高级搜索    ${Cname2}    ${Cname2}
+    sleep    3
+    删除合同
+    [Teardown]    关闭浏览器
+
+生成合同账单
+    登录    ${生成合同费用}
+    sleep    3
+    进入iframe
+    生成合同账单
+    [Teardown]    关闭浏览器
+
+合同收费
+    登录    ${合同收费}
+    sleep    3
+    进入iframe
+    合同收费
+    [Teardown]    关闭浏览器
