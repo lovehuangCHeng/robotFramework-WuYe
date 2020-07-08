@@ -15,6 +15,7 @@ Library           BuiltIn
     登录    ${退款历史记录}
     进入iframe
     查看退款明细
+	[Teardown]    关闭浏览器
 
 退款补打（不打印）
     登录    ${退款历史记录}

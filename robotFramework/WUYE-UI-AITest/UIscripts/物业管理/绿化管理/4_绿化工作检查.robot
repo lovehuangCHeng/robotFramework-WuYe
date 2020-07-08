@@ -22,4 +22,3 @@ Library           Selenium2Library
     sleep    2
     删除绿化工作
     [Teardown]    关闭浏览器
-

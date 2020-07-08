@@ -45,7 +45,6 @@ Library           Mylibrary
     Execute Sql String    ${sqlselect}
     Disconnect From Database
 
-
 二次确认
     sleep    2
     click element    //button[@class='ant-btn ant-btn-primary ant-btn-sm']
@@ -156,12 +155,12 @@ Library           Mylibrary
     ${m}    读取cookie
     Add Cookie    nova_pms_auth_Default    ${m}
     sleep    0.5
+    Go To    ${testurl}
+    sleep    1.5
     Maximize Browser Window
     sleep    1
     Go To    ${testurl}
-    sleep    0.5
-    Go To    ${testurl}
-    sleep    3
+    sleep    2
 
 表单单元格数据不为0的元素查找
     [Arguments]    ${num1}    ${num2}

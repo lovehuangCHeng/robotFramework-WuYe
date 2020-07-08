@@ -18,7 +18,7 @@ Library           Selenium2Library
     [Teardown]    关闭浏览器
 
 删除绿化事件
-    [Setup]    登录    ${绿化事件记录}
+    [Setup]    登录登录    ${绿化事件记录}
     sleep    2
     删除绿化事件
     [Teardown]    关闭浏览器

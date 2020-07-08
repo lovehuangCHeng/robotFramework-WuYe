@@ -109,10 +109,16 @@ DScode="select top 1 code from OrganizationItem   where ItemType =5"
 DSname="select top 1 Name  from Customer GROUP BY Name  HAVING COUNT(Name)<2"
 
 '''
-插入零头账户数据
+零头账户数据处理
 '''
+#插入零头账户数据
 CustomerAccoutLingTou="INSERT into dbo.CustomerAccount values((select top 1 id from customer),0.5,0,null,(select top 1  id from FN_Account f where f.parentId=1 ),1)"
-
+#判断系统是否存在零头账户数据
+CustomerAccoutCount="select count(*) from CustomerAccount"
+#删除零头账户数据
+deleteCustomerAccount="delete from dbo.CustomerAccount  where customerId =(select top 1 id from customer) and Balance=0.5"
+#判断是否有插入的零头账户数据
+exidCustomerAccount="select count(*)from dbo.CustomerAccount  where customerId =(select top 1 id from customer) and Balance=0.5"
 '''
 查询模块是否开启
 '''

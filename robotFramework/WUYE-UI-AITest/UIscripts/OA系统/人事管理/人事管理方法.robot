@@ -10,6 +10,8 @@ Resource          ../../通用方法.robot
     sleep    1
     Click Element    ${考勤新建}
     sleep    2
+	等待元素可用    ${职员姓名}
+    sleep    1
     Input Text    ${职员姓名}    ${test}
     sleep    2
     Click Element    ${职员性别}
@@ -19,6 +21,8 @@ Resource          ../../通用方法.robot
 
 考勤管理搜索
     [Arguments]    ${testdata}
+	等待元素可用    ${职员搜索框}
+    sleep    1
     Input Text    ${职员搜索框}    ${testdata}
     sleep    2
     Click Element    ${职员搜索按钮}

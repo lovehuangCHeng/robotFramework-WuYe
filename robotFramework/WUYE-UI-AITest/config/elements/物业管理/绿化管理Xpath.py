@@ -68,13 +68,14 @@
 绿化工作第一个检查人="//div[@style='position: absolute; top: 0px; left: 0px; width: 100%;'][4]//ul[@role='listbox']/li[1]"
 
 绿化工作检查时间="//span[@id='inspectionDate']//input"
-绿化工作检查时间选择="//div[7]//tr[2]/td[4]"
+绿化工作检查时间选择="//tr[@class='ant-calendar-current-week ant-calendar-active-week']/td[1]/div[@class='ant-calendar-date']"
 
 绿化工作检查情况="//input[@id='inspectionResults']"
 绿化工作检查结果下拉="//div[@id='status']//div[@class='ant-select-selection__placeholder']"
 绿化工作检查结果="//li[text()='合格']"
 绿化植被新建确定="//span[text()='确 定']/.."
 
+绿化工作备注文本框="//textarea[@id='remark']"
 
 #通用
 搜索框="//input[@placeholder='搜索...']"
