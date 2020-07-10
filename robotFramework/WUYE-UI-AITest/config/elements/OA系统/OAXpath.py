@@ -19,8 +19,8 @@ class MyObject:
 公告管理区下拉框="//div[text()='请选择发送范围']"
 公告选择所有管理区="Xpath=//li[text()='所有管理区']"
 勾选后台系统="//div[@id='PublishChannels']/label[3]/span[@class='ant-checkbox']/input[@value='2']"
-公告主题输入="//div[@class='ant-form-item-control']/span[@class='ant-form-item-children']/input[@placeholder='请输入公告主题']"
-公告内容输入="//div[@class='w-e-text-container']/div[@id]"
+公告主题输入="//input[@placeholder='请输入公告主题']"
+公告内容输入="//div[@id='ddd']/div[2]/div[1]"
 公告保存按钮="//button[@type='button'][2]"
 公告保存并发布按钮="//div/button[3][@class='ant-btn ant-btn-primary']"
 #搜索公告

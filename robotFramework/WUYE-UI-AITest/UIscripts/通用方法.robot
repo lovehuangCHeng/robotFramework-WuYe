@@ -192,3 +192,4 @@ Library           Mylibrary
     #选中分公司
     click element    //span[text()='${var[0][0]}']/../../span[1]
     sleep    0.5
+	
