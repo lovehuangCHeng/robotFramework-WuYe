@@ -33,7 +33,7 @@ class MyObject:
 新建销售单_选择抽奖时间段="//body/div[7]//ul/li[1]"
 新建销售单_手续费="//form/div[6]//input[@class='ant-input-number-input']"
 新建销售单_刷卡卡号="//input[@id='cardNumber']"
-新建销售单_确定="//body/div[2]//button[@class='ant-btn ant-btn-primary']"
+新建销售单_确定="//div[@class='ant-modal-footer']//button[2]"
 搜索销售单_销售单号="//main/div[1]//input[@id='salesOrderNumber']"
 搜索销售单_展厅号="//main/div[1]//div[@id='organizationItemId']"
 搜索销售单_选择展厅号="//main/div[1]//div[@id='organizationItemId']/following-sibling::div//ul/li[1]"

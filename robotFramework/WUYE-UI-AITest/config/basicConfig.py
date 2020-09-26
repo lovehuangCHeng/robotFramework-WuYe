@@ -2,6 +2,6 @@
 '''
 配置连接信息
 '''
-sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_xinye',UID='sa',PWD='Sa123456'"
-username = 'admin'
-password = 'Nova@2015'
+sqlconfig="DRIVER='{SQL Server}',SERVER='WIN-E4I1KQ1IN70',DATABASE='pms_pigx',UID='sa',PWD='Sa123456'"
+username = 'shitaihong'
+password = '123456'

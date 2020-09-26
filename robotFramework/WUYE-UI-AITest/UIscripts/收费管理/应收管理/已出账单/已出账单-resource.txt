@@ -155,6 +155,18 @@ Library           string
     sleep    2
     Click element    ${已出二次确认}
 	sleep    1
+	Click element    ${div确定按钮}
+	sleep    1
+	Click Element    ${勾选外层账单}
+    sleep    1
+	等待element元素可见    ${标记为未开票}
+    sleep    1
+    Click Element    ${标记为未开票}
+    sleep    2
+    Click element    ${已出二次确认}
+	sleep    1
+	Click element    ${div确定按钮}
+	sleep    1
 
 查询获取未缴费已出账单
     ${NBCode}    Set Variable    ${var[0][0]}

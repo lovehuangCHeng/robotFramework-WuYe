@@ -150,6 +150,8 @@ Variables         ../../../config/elements/物业管理/品质巡查Xpath.py
     等待元素可用    ${选择第一个巡查事项}
     Click Element    ${选择第一个巡查事项}
     sleep    1
+	Click Element    ${巡查事项下拉}
+    sleep    1
     Click Button    ${保存按钮}
     sleep    1
 

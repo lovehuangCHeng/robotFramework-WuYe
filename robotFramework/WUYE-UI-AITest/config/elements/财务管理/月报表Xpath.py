@@ -139,7 +139,7 @@ span数据断言="//span[text()='租金']"
 截止日期当前日期="//td[@class='ant-calendar-cell ant-calendar-today ant-calendar-selected-date ant-calendar-selected-day']/div[@class='ant-calendar-date']"
 ##########欠费原因统计##########
 欠费原因截止日期="//span[@id='paidDate']"
-欠费原因截止日期选择="//input[@placeholder='请选择日期']/../../..//tr[2]/td[1]"
+欠费原因截止日期选择="//a[text()='今天']"
 欠费原因应收日期="//span[@id='date']"
 欠费原因选择应收开始日期="//input[@placeholder='开始日期']/../../..//tr[1]/td[1]"
 欠费原因选择应收结束日期="//input[@placeholder='开始日期']/../../..//tr[5]/td[1]"

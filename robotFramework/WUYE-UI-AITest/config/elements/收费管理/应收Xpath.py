@@ -36,8 +36,10 @@ class MyObject:
 冻结账单="//button[@id='btnFrozenBill']"
 解冻账单="//button[@id='btnUnFrozenBill']"
 标记为开票="//button[@id='markBillInvoiced']"
+标记为未开票="//button[@id='markBillUnInvoiced']"
 修改费用承担人="//button[@id='btnUpdateOwner']"
 设置欠费原因="//button[@id='btnSetArrearReasonType']"
+div确定按钮="//div[@class='modal-content']/div[2]/button"
 
 #固定金额分摊
 新建固定金额="//button[@id='btnAdd']"

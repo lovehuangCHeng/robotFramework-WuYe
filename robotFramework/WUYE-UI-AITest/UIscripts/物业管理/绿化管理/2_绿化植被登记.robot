@@ -12,13 +12,13 @@ Library           Selenium2Library
     [Teardown]    关闭浏览器
 
 编辑绿化植被
-    [Setup]    登录登录    ${绿化植被登记}
+    [Setup]    pigx登录    ${绿化植被登记}
     sleep    2
     编辑绿化植被
     [Teardown]    关闭浏览器
 
 删除绿化植被
-    [Setup]    登录登录    ${绿化植被登记}
+    [Setup]    pigx登录    ${绿化植被登记}
     sleep    2
     删除绿化植被
     [Teardown]    关闭浏览器

@@ -16,12 +16,12 @@ class MyObject:
 公告类别保存按钮="Xpath=//div[@class='ant-modal-content']/div[@class='ant-modal-footer']/button[2]"
 ##新建公告管理
 选择新建的公告类别="//ul[@role='listbox']/li[last()-1]"
-公告管理区下拉框="//div[text()='请选择发送范围']"
-公告选择所有管理区="Xpath=//li[text()='所有管理区']"
+公告管理区下拉框="//span[text()='请选择发送范围！']"
+公告选择所有管理区="//ul/li[1]/span[2]"
 勾选后台系统="//div[@id='PublishChannels']/label[3]/span[@class='ant-checkbox']/input[@value='2']"
 公告主题输入="//input[@placeholder='请输入公告主题']"
 公告内容输入="//div[@id='ddd']/div[2]/div[1]"
-公告保存按钮="//button[@type='button'][2]"
+公告保存按钮="//div[@class='ant-modal-footer']//button[@type='button'][2]"
 公告保存并发布按钮="//div/button[3][@class='ant-btn ant-btn-primary']"
 #搜索公告
 公告搜索输入框="Xpath=//div/span/input[@placeholder='搜索...']"

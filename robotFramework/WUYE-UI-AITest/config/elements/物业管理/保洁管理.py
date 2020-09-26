@@ -177,8 +177,9 @@
 保安岗位管理_保安姓名="id=staffId"
 保安岗位管理_保安姓名_testing="//li[text()='testing']"
 保安岗位管理_值班方案="id=securityDutyPlanId"
-保安岗位管理_值班方案_值="//body/div[6]//ul/li[1]"
+保安岗位管理_值班方案_值="//body/div[4]//ul/li[1]"
 保安岗位管理_保存="//button/span[text()='保 存']/.."
+保安岗位管理_查看_关闭="//i[@class='anticon anticon-close']"
 #断言
 添加保安岗成功="//span[text()='添加保安岗成功']"
 编辑保安岗成功="//span[text()='编辑保安岗成功']"

@@ -1,5 +1,5 @@
 # Can be used in the test data like ${MyObject()} or ${MyObject(1)}
-basicURL='http://10.10.120.171:8081'
+basicURL='http://10.10.120.171:8000'
 loginURL='/Login'
 首页=basicURL+'/#/home'
 ##基础信息
@@ -22,16 +22,16 @@ loginURL='/Login'
 ##客户服务
 #房屋交付管理
 交房登记=basicURL+'/#/Nova.Pms.PropertyManagementSystem/HandOverHouse/Index'
-接房登记=basicURL+'/#/Nova.Pms.PropertyManagementSystem/ReceiveHouse/Index'
-入住登记=basicURL+'/#/Nova.Pms.PropertyManagementSystem/CustomerCheckIn/Index'
+接房登记=basicURL+'/#/GTLJ/CustomerServiceManage/ReceiveHouse'
+入住登记=basicURL+'#/GTLJ/CustomerServiceManage/CustomerCheckIn'
 装修登记=basicURL+'/#/Nova.Pms.CustomerService/Decorate/Index'
 #报事报修
-提醒设置=basicURL+'/#/Nova.Pms.CustomerService/DispatchPrioritySetting/Index'
-工单类型管理=basicURL+'/#/Nova.Pms.CustomerService/DispatchType/Index'
-工单紧急程度=basicURL+'/#/Nova.Pms.CustomerService/DispatchPriority/Index'
-报修管理=basicURL+'/#/Nova.Pms.CustomerService/RepairService/Index'
-派工管理=basicURL+'/#/Nova.Pms.CustomerService/Dispatch/Index'
-投诉建议=basicURL+'/#/Nova.Pms.CustomerService/ComplaintHandle/Index'
+工单设置=basicURL+'/#/GTLJ/CustomerServiceManage/SingleSet'
+报修管理=basicURL+'/#/GTLJ/CustomerServiceManage/ReportAboutTheRepair'
+待我跟进的报修单=basicURL+"/#/GTLJ/CustomerServiceManage/FollowTheRepair"
+派工单管理=basicURL+'/#/GTLJ/CustomerServiceManage/DispatchingOrderManage'
+维修延时审批=basicURL+'/#/GTLJ/CustomerServiceManage/DelayApproval'
+投诉建议=basicURL+'/#/GTLJ/CustomerServiceManage/CustomerComplaint'
 客户回访=basicURL+'/#/Nova.Pms.CustomerService/CustomerReturnVisit/Index'
 及时率报表=basicURL+'/#/Nova.Pms.CustomerService/CustomerServiceReportManage/Report'
 汇总统计=basicURL+'/#/customerServiceReport'
@@ -113,6 +113,7 @@ loginURL='/Login'
 组织机构=basicURL+'/#/GTLJ/SystemManage/Organization'
 权限管理=basicURL+'/#/GTLJ/SystemManage/AuthorityManage'
 用户管理=basicURL+'/#/GTLJ/SystemManage/UserManage'
+管理区管理=basicURL+'/#/GTLJ/SystemManage/Region'
 #财务对接配置
 基本设置=basicURL+'/#/financeSetting'
 科目配置=basicURL+'/#/financeItemSetting'
@@ -143,6 +144,7 @@ loginURL='/Login'
 我的排班=basicURL+'/#/oaSystem/hrManage/WorkShiftMyShift'
 排班计划=basicURL+'/#/oaSystem/hrManage/WorkShiftPlan'
 排班设置=basicURL+'/#/oaSystem/hrManage/WorkShiftSetting'
+
 
 
 ##出入管理

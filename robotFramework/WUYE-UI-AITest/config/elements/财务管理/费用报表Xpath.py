@@ -213,8 +213,8 @@ class MyObject:
 往年收欠率表_导出="//button/span[text()='导出EXCEL']/.."
 往年收欠率表_表格="//table"
 ##########综合收费率报表##########
-综合收费率报表_截止月份="//span[@id='month']//input"
-综合收费率报表_选择截止月份="//table[@class='ant-calendar-month-panel-table']//tr[last()]/td[last()]"
+综合收费率报表_截止月份="//span[@id='date']//input"
+综合收费率报表_选择截止月份="//a[text()='今天']"
 综合收费率报表_管理区="//ul[@class='ant-select-selection__rendered']/parent::span"
 综合收费率报表_选择管理区="//ul[@class='ant-select-tree']/li/ul/li[1]/span[3]"
 综合收费率报表_收费项目="//div[@id='chargeItemTypeIds']"

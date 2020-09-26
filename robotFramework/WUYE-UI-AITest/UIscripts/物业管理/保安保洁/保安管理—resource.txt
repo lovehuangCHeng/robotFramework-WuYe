@@ -275,9 +275,9 @@ Library           Selenium2Library
 	等待element元素可见    ${查看}
     sleep    1
     click element    ${查看}
-    等待element元素可见    ${保安岗位管理_保存}
+    等待element元素可见    ${保安岗位管理_查看_关闭}
     sleep    1
-    click button    ${保安岗位管理_保存}
+    click element    ${保安岗位管理_查看_关闭}
     等待element元素可见    ${保洁区域_列表_区域名称}
     sleep    1
 

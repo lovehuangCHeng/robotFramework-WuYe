@@ -8,22 +8,22 @@ Variables         ../config/basicConfig.py
 Library           Mylibrary
 
 *** Keywords ***
-登录登录
+pigx登录
     [Arguments]    ${testurl}
     Open Browser    ${basicURL}    chrome
     Maximize Browser Window
     sleep    1
-    等待元素可用    name=UserName
+    等待元素可用    id=username
     sleep    1
-    input text    name=UserName    ${username}
+    input text    id=username    ${username}
     sleep    1
-    等待元素可用    name=Password
+    等待元素可用    id=password
     sleep    1
-    input text    name=Password    ${password}
+    input text    id=password    ${password}
     sleep    1
-    等待元素可用    Xpath=//input[@type='submit']
+    等待元素可用    //button
     sleep    1
-    click element    Xpath=//input[@type='submit']
+    click element    //button
     sleep    2
     Go To    ${testurl}
     sleep    2
@@ -132,17 +132,17 @@ Library           Mylibrary
     Open Browser    ${basicURL}    chrome
     Maximize Browser Window
     sleep    1
-    等待元素可用    name=UserName
+    等待元素可用    id=username
     sleep    1
-    input text    name=UserName    ${username}
+    input text    id=username    ${username}
     sleep    1
-    等待元素可用    name=Password
+    等待元素可用    id=password
     sleep    1
-    input text    name=Password    ${password}
+    input text    id=password    ${password}
     sleep    1
-    等待元素可用    Xpath=//input[@type='submit']
+    等待元素可用    Xpath=//button
     sleep    1
-    click element    Xpath=//input[@type='submit']
+    click element    Xpath=//button
     ${cookies}    get cookies
     存储cookie到文件    ${cookies}
     sleep    2
@@ -192,4 +192,3 @@ Library           Mylibrary
     #选中分公司
     click element    //span[text()='${var[0][0]}']/../../span[1]
     sleep    0.5
-	

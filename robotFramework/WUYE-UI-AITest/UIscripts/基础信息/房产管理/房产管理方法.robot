@@ -131,7 +131,6 @@ Resource          ../../通用方法.robot
 
 编辑楼宇
     切换到楼宇标签
-    Click Element    ${四个页面checkbox}
     sleep    1
 	等待元素可用	${楼宇编辑}
 	sleep    1
@@ -142,8 +141,7 @@ Resource          ../../通用方法.robot
 
 查看楼宇
     切换到楼宇标签
-    Click Element    ${四个页面checkbox}
-    sleep    1
+	sleep	1
 	等待元素可用	${楼宇查看}
 	sleep    1
     Click Element    ${楼宇查看}
@@ -155,7 +153,6 @@ Resource          ../../通用方法.robot
 	[Arguments]    ${name}
     切换到楼宇标签
     搜索楼宇    ${name}
-    Click Element    ${四个页面checkbox}
     sleep    1
 	等待元素可用	${楼宇删除}
 	sleep    1
@@ -193,7 +190,6 @@ Resource          ../../通用方法.robot
 
 停车场编辑
     切换到停车场标签
-    Click Element    ${四个页面checkbox}
     sleep    1
 	等待元素可用	${停车场编辑}
 	sleep    1
@@ -214,7 +210,8 @@ Resource          ../../通用方法.robot
 
 停车场查看
     切换到停车场标签
-    Click Element    ${四个页面checkbox}
+	等待元素可用	${搜索框}
+	sleep    1
     sleep    1
     Click Element    ${停车场查看}
     sleep    1
@@ -222,7 +219,6 @@ Resource          ../../通用方法.robot
 停车场删除
     [Arguments]    ${name}
     停车场搜索    ${name}
-    Click Element    ${四个页面checkbox}
     sleep    1
 	等待元素可用	${停车场删除}
 	sleep    1
@@ -280,6 +276,7 @@ Resource          ../../通用方法.robot
     [Arguments]    ${code}
     查看楼宇
     sleep    1
+	等待元素可用	${添加房间}
     Click Element    ${添加房间}
     sleep    1
     Input Text    ${房间楼层}    10
@@ -359,9 +356,7 @@ Resource          ../../通用方法.robot
 	sleep    1
     Click Element    ${确认删除}
     sleep    1
-	断言值包含    ${删除成功断言}	删除成功
-	sleep    1
-
+	
 房间导出
     切换到房间标签
     Click Element    ${导出Excel}

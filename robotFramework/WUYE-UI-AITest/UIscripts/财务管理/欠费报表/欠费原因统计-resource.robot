@@ -38,6 +38,12 @@ Variables         ../../../config/elements/财务管理/月报表Xpath.py
     click element    ${管理区下拉}
     搜索输入中的管理区
     sleep    1
+	click element    ${欠费原因截止日期}
+    sleep    1
+    等待元素可用    ${欠费原因截止日期选择}
+    sleep    1
+    click element    ${欠费原因截止日期选择}
+    sleep    1
     click element    ${欠费原因应收日期}
     sleep    1
     等待元素可用    ${欠费原因选择应收开始日期}
